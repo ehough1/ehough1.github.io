@@ -7,12 +7,14 @@
 <meta charset="UTF-8">
 <link href='css/bootstrap.css ' rel='stylesheet '>
 <link href='css/main.css ' rel='stylesheet '>
+
+
+
 <title> Gael Trails</title>
 </head>
 
 
 <body>
-
 
 <div class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
@@ -34,7 +36,9 @@
 	</div>
 
 	<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" data-target="#">Home</a></li>
+            
+            
             <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
             <li><a href="contactUs.html" data-target="#" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -240,7 +244,25 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js '></script>
 <script src='js/bootstrap.js '></script>
 
+<script>
 
+<!-- Found the code online to scroll to the anchor http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+$(document).ready(function(){
+    $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+	
+});
+</script>
 
 </body>
 
