@@ -131,13 +131,14 @@
 <div class ="container">
 <div class="row text-center">
   <div class="col-sm-12">
-<button type='button' data-id="english" class="btn btn-lg btn-info">English </button>
-<button type='button' data-id="irish" class="btn btn-lg btn-info"> Irish </button>
-<button type='button' data-id="spanish" class="btn btn-lg btn-info"> Spanish </button>
-<button type='button' data-id="dutch" class="btn btn-lg btn-info">Dutch </button>
-<button type='button' data-id="french" class="btn btn-lg btn-info"> French </button>
+  <div class="btn-group" data-toggle="buttons-radio">
+<button type='button' data-target="english" class="btn btn-lg btn-info active">English </button>
+<button type='button' data-target="irish" class="btn btn-lg btn-info"> Irish </button>
+<button type='button' data-target="spanish" class="btn btn-lg btn-info"> Spanish </button>
+<button type='button' data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
+<button type='button' data-target="french" class="btn btn-lg btn-info"> French </button>
 
-
+</div>
 </div>
 </div>
 </div>
@@ -357,6 +358,7 @@ De datum, 1792, die te zien is op de stenen boog van het hotel kan de datum zijn
 
 
 
+
 <!--$(document).ready(function () {
 
     $("p").hide();
@@ -375,6 +377,34 @@ De datum, 1792, die te zien is op de stenen boog van het hotel kan de datum zijn
 });-->
 
 
+<!--$(document).ready(function () {
+
+    $(".irish").hide();
+
+    $(".btn-group button").click(function(){
+         $("#mainGuardEnglish").toggle();
+    });
+
+    $("#irishBtn").click(function(){
+         $("#mainGuardIrish").toggle();
+    });
+
+    $("#btn2").click(function(){
+         $("#p2").toggle();
+    });
+});-->
+
+<!--$(document).ready(function() {
+
+    $('.irish').hide();
+    $('.btn-group button').click(function(){
+        var target = "#" + $(this).data("target");
+        $(".irish").not(target).hide();
+        $(target).show();
+    });
+
+});-->
+
 
 <!--$(document).ready(function () {
  $(".button").click(function(){
@@ -391,7 +421,6 @@ De datum, 1792, die te zien is op de stenen boog van het hotel kan de datum zijn
         $('#' + $(this).data('id')).show();
     });
 });-->
-
 
 </body>
 </html>
