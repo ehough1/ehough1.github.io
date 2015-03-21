@@ -365,80 +365,50 @@ $(document).ready(function(){
 	
 
 
-$("button").click(function(){
-	alert("Button container clicked on");
+$("#irishBtn").click(function(){
+	//alert("Button container clicked on");
 	//if(event.target == "irishBtn"){
-		$(".irish").show();
+		$(".irish").fadeToggle("slow","swing");
+		$(".english").hide();
+		$(".dutch").hide();
+		$(".spanish").hide();
+	//}
+	});
+	
+	$("#spanishBtn").click(function(){
+	//alert("Button container clicked on");
+	//if(event.target == "spanishBtn"){
+		$(".spanish").fadeToggle("slow","swing");
+		$(".english").hide();
+		$(".irish").hide();
+		$(".dutch").hide();
+	//}
+	});
+	
+	$("#dutchBtn").click(function(){
+	//alert("Button container clicked on");
+	//if(event.target == "dutchBtn"){
+		$(".dutch").fadeToggle("slow","swing");
+		$(".english").hide();
+		$(".irish").hide();
+		$(".spanish").hide();
 	//}
 	});
 	
 	
+	$("#englishBtn").click(function(){
+	//alert("Button container clicked on");
+	//if(event.target == "englishBtn"){
+		$(".english").fadeToggle("slow","swing");
+		$(".irish").hide();
+		$(".spanish").hide();
+		$(".dutch").hide();
+	//}
+	});
+	
 	
 });	
 </script>
-
-<!--$(document).ready(function () {
-
-    $("p").hide();
-
-    $("#englishBtn").click(function(){
-         $("#mainGuardEnglish").toggle();
-    });
-
-    $("#irishBtn").click(function(){
-         $("#mainGuardIrish").toggle();
-    });
-
-    $("#btn2").click(function(){
-         $("#p2").toggle();
-    });
-});-->
-
-
-<!--$(document).ready(function () {
-
-    $(".irish").hide();
-
-    $(".btn-group button").click(function(){
-         $("#mainGuardEnglish").toggle();
-    });
-
-    $("#irishBtn").click(function(){
-         $("#mainGuardIrish").toggle();
-    });
-
-    $("#btn2").click(function(){
-         $("#p2").toggle();
-    });
-});-->
-
-<!--$(document).ready(function() {
-
-    $('.irish').hide();
-    $('.btn-group button').click(function(){
-        var target = "#" + $(this).data("target");
-        $(".irish").not(target).hide();
-        $(target).show();
-    });
-
-});-->
-
-
-<!--$(document).ready(function () {
- $(".button").click(function(){
-     $("#text" + $(this).attr('t')).toggle();
- }); 
-});-->
-
-
-
-<!--$(document).ready(function () {
-    $('.irish').hide();
-    $(".btn").click(function () {
-        $('.irish').hide();
-        $('#' + $(this).data('id')).show();
-    });
-});-->
 
 </body>
 </html>
