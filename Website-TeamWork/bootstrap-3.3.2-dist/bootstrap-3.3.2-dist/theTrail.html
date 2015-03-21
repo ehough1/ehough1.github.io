@@ -69,7 +69,8 @@
                     
             <li><a href="theTrail.html" data-toggle="dropdown">The Trail <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            
+            <li><a href="theTrail.html"> The Trail</a></li>
+            <li class="divider"></li>
             <li><a href="theTrail.html"> The Main Guard </a></li>
             <li class="divider"></li>
             <li><a href="theTrail.html"> Old Saint Mary's Church </a></li>
@@ -128,17 +129,17 @@
 <div class="divide-nav"></div>
 
 
-<div class ="container">
+<div class ="btnContainer">
 <div class="row text-center">
   <div class="col-sm-12">
-  <div class="btn-group" data-toggle="buttons-radio">
-<button type='button' data-target="english" class="btn btn-lg btn-info active">English </button>
-<button type='button' data-target="irish" class="btn btn-lg btn-info"> Irish </button>
-<button type='button' data-target="spanish" class="btn btn-lg btn-info"> Spanish </button>
-<button type='button' data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
-<button type='button' data-target="french" class="btn btn-lg btn-info"> French </button>
+  <!--<div class="btn-group" data-toggle="buttons-radio">-->
+<button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info active">English </button>
+<button type='button' id="irishBtn" data-target="irish" class="btn btn-lg btn-info"> Irish </button>
+<button type='button' id="spanishBtn" data-target="spanish" class="btn btn-lg btn-info"> Spanish </button>
+<button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
+<button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info"> French </button>
 
-</div>
+<!--</div>-->
 </div>
 </div>
 </div>
@@ -245,7 +246,7 @@ Guarding the western entrance to the town, at the end of O'Connell St., is the i
 	</p>
     
     
-    <h2 clas="irish"> An Geata Thiar</h2>
+    <h2 class="irish"> An Geata Thiar</h2>
     
     <p class="irish">
     Tá an Geata breá Thiar ag ceann Shráid Uí Chonaill ar an slí isteach go dtín baile ón iarthar. Sa bhliain 1831 a thóg ceannaí, darbh ainm dó Joyce, an struchtúr atá anois ann.  Foirgneamh cosanta ab ea an foirgneamh a bhí roimhe sin ann,a tógadh chun an baile Normannach a choimeád slán ó aon ionradh a dhéanfadh na Gaeil. Mhair an pobal dúchasach lasmuigh d’fhallaí an bhaile agus tugtar ‘an Baile Gaelach’ ar an gceantar siar amach ón nGeata. Cé nach mbíodh cead cónaithe ag Gaeil laistigh d’fhallaí an bhaile, bhíodh cead acu teacht isteach i gCluain Meala chun trádáil a dhéanamh ar aontaí agus margaí. Chuaigh an Geata chun raice le linn na haoise seo caite agus dúisíodh fonn i measc roinnt de mhuintir na háite go ndéanfaí athchóiriú air. Cuireadh díon nua air, treisíodh na háirsí le bíomaí cruach agus daingníodh na hurláir, arís ag baint úsáid as cruach. Tá plaic aolchloiche, a shnoígh Frances Dietrich in 1975, ar éadan thoir an Gheata ag déanamh comóradh ar an údar Lawrence Stern, a saolaíodh i gCluain Meala.
@@ -356,8 +357,16 @@ De datum, 1792, die te zien is op de stenen boog van het hotel kan de datum zijn
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-
-
+<script>
+$(document).ready(function(){
+	$(".irish").hide();
+	$(".spanish").hide();
+	$(".dutch").hide();
+	$("irishBtn").click(function(){
+		$(".irish").show() ;
+	});
+});
+</script>
 
 <!--$(document).ready(function () {
 
