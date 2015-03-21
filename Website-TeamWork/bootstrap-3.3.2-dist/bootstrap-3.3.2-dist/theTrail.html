@@ -362,10 +362,19 @@ $(document).ready(function(){
 	$(".irish").hide();
 	$(".spanish").hide();
 	$(".dutch").hide();
-	$("irishBtn").click(function(){
-		$(".irish").show() ;
+	
+
+
+$("button").click(function(){
+	alert("Button container clicked on");
+	//if(event.target == "irishBtn"){
+		$(".irish").show();
+	//}
 	});
-});
+	
+	
+	
+});	
 </script>
 
 <!--$(document).ready(function () {
