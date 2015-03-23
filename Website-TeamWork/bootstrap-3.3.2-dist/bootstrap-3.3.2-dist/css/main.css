@@ -2,13 +2,6 @@
 font-size:32px;
 }
 
-/*.homepage-slideshow{
-	padding:40px;
-	padding-top:100px;
-	height:15%;
-	width:100%;
-}
-*/
 .navbar-brand{
 	font-size:36px;
 }
@@ -17,10 +10,15 @@ font-size:32px;
 padding:20px;
 }
 
-/*.divide-nav{
-	position:static;
-}*/
+.logo{
+height:10%;
+width:10%;
+}
 
+
+.spacerContainer{
+padding:20px;
+}
 
 .navbar-lower{
 	position:fixed;
