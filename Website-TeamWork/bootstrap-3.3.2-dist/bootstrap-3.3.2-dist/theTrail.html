@@ -71,16 +71,18 @@
             <ul class="dropdown-menu">
             <li><a href="theTrail.html"> The Trail</a></li>
             <li class="divider"></li>
-            <li><a href="theTrail.html"> The Main Guard </a></li>
+            <li><a href="#theMainGuard" class="scroll" > The Main Guard </a></li>
             <li class="divider"></li>
-            <li><a href="theTrail.html"> Old Saint Mary's Church </a></li>
+            <li><a href="#oldSaintMarysChurch" class="scroll" > Old Saint Mary's Church </a></li>
             <li class="divider"></li>
-            <li><a href="theTrail.html"> Jail Gate </a></li>
+            <li><a href="#theWestGate" class="scroll" > The West Gate </a></li>
             <li class="divider"></li>
-            <li><a href="theTrail.html"> Hearne's Hotel </a></li>
+            <li><a href="#theJailGate" class="scroll"> Jail Gate </a></li>
             <li class="divider"></li>
-            <li><a href="theTrail.html"> The Courthouse </a></li>
+            <li><a href="#hearnsHotel" class="scroll" > Hearne's Hotel </a></li>
             
+            
+            <!--<li><a href="#contactUs" class="scroll-link" data-id="contactUs">Contact Us</a></li>-->
             </ul>
             </li>
             
@@ -133,7 +135,7 @@
 <div class="row text-center">
   <div class="col-sm-12">
   <!--<div class="btn-group" data-toggle="buttons-radio">-->
-<button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info active">English </button>
+<button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info">English </button>
 <button type='button' id="irishBtn" data-target="irish" class="btn btn-lg btn-info"> Irish </button>
 <button type='button' id="spanishBtn" data-target="spanish" class="btn btn-lg btn-info"> Spanish </button>
 <button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
@@ -145,7 +147,10 @@
 </div>
 <span></span>
 
+
  <a id="theMainGuard"></a>
+
+ 
 <div class ="container">
 <div class="row features well" id="mainGuard">
   <div class="col-sm-6">
@@ -468,6 +473,38 @@ $("#irishBtn").click(function(){
 		$(".english").hide();
 	//}
 	});
+	
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+
+
+ var hashTagActive = "";
+    $(".scroll").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+	
+	
+
 });	
 </script>
 
