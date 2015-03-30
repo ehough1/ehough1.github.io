@@ -3,8 +3,10 @@
 <meta charset="UTF-8">
 <link href='css/bootstrap.css ' rel='stylesheet '>
 <link href='css/main.css ' rel='stylesheet '>
+ <!-- Load Bootstrap and FontAwesome CDN'ed from bootstrapcdn.com -->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
 
-
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
 
 <title> The Courthouse</title>
 
@@ -99,28 +101,38 @@
 <div class="container">
 	<div class="navbar-lower">
     <div class="navbar-brand">Clonmel Heritage Trail</div>
+   <!-- Maybe create a list to set the buttons??? -->
+   
+   <button type="button" class="navbar-toggle" 
+		      data-toggle="collapse" 
+		      data-target=".navbar-collapse">
+
+	
+		<span class="sr-only">Toggle Navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	
+
+	<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
     
-    
-    
-    <!-- Maybe create a list to set the buttons??? -->
-    <ul class="nav navbar-nav navbar-right">
- 
-    <li><a href="https://twitter.com/clairemfromcork" class="twitter-follow-button" data-show-count="false">Follow @clairemfromcork</a></li>
-   <!--<div id="fb-root"></div>
-   <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
--->
-
-<!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>-->
-
-<!--<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpenandpixelclonmel&amp;width=50&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:35px;" allowTransparency="true"></iframe>-->
-
-<!--<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpenandpixelclonmel&width=50&layout=box_count&action=like&show_faces=false&share=false&height=65"></iframe>-->
-
-<!--<div class="pluginConnectButton"><div class="pluginButton pluginButtonInline pluginConnectButtonDisconnected hidden_elem" title="Like"><div><div class="pluginButtonContainer"><div class="pluginButtonImage"><button type="submit" title="Like"><i class="pluginButtonIcon img sp_plugin-button-1_5x sx_plugin-button-1_5x_favblue"></i></button></div><span class="pluginButtonLabel">Like</span></div></div></div><div class="pluginButton pluginButtonPressed pluginButtonInline pluginButtonX pluginConnectButtonConnected" title=""><div><div class="pluginButtonContainer"><div class="pluginButtonImage"><button type="submit" title="Like"><i class="pluginButtonIcon pluginButtonXOff img sp_plugin-button-1_5x sx_plugin-button-1_5x_chblue"></i><i class="pluginButtonIcon pluginButtonXOn img sp_plugin-button-1_5x sx_plugin-button-1_5x_xblue" title="Unlike"></i></button></div><span class="pluginButtonLabel">Like</span></div></div></div></div> -->
-
-<!--<li><div class="fb-like" data-href="https://www.facebook.com/clairemfromcork" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div></li>-->
-<!-- Place this tag where you want the widget to render. -->
-<li><div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/106539828774644183602" data-rel="author"></div></li>
+    <!--<ul class="nav navbar-nav navbar-right">-->
+            <li> <a href="https://www.facebook.com/clairemfromcork">
+                    <i class="icon icon-facebook"></i>
+                    <span>Facebook</span>
+                </a></li>
+                <li><a href="https://twitter.com/clairemfromcork">
+                    <i class="icon icon-twitter"></i>
+                    <span>Twitter</span>
+                </a></li>
+                <li><a href="https://plus.google.com/u/0/">
+                    <i class="icon icon-google-plus"></i>
+                    <span>Google Plus</span>
+                </a></li>
+               
+          
+    <!--<li><a href="https://twitter.com/clairemfromcork" class="twitter-follow-button" data-show-count="false">Follow @clairemfromcork</a></li>-->
 </ul>
 <!-- Place this tag after the last widget tag. -->
 
