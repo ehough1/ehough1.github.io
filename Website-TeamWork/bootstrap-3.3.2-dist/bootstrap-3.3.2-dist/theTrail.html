@@ -16,27 +16,6 @@
 
 <body>
 
-<script>
-
-//Trying to get Facebook button to work.
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '722293607868830',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
-
 <div class='navbar navbar-default navbar-fixed-top'>
 <div class='container'>
 
@@ -101,6 +80,8 @@
 <div class="container">
 	<div class="navbar-lower">
     <div class="navbar-brand">Clonmel Heritage Trail</div>
+    
+    
    <!-- Maybe create a list to set the buttons??? -->
    
    <button type="button" class="navbar-toggle" 
@@ -118,7 +99,7 @@
 	<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
     
     <!--<ul class="nav navbar-nav navbar-right">-->
-            <li> <a href="https://www.facebook.com/clairemfromcork">
+            <li><a href="https://www.facebook.com/clairemfromcork">
                     <i class="icon icon-facebook"></i>
                     <span>Facebook</span>
                 </a></li>
@@ -153,6 +134,7 @@
 <button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
 <button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info"> French </button>
 <button type='button' id="italianBtn" data-target="italian" class="btn btn-lg btn-info"> Italian </button>
+<button type='button' id="koreanBtn" data-target="korean" class="btn btn-lg btn-info"> Korean </button>
 
 <!--</div>-->
 </div>
@@ -207,6 +189,10 @@ Comme ce nom nous indique, c’est ici où la principale garde des troupes de la
 
 Come il nome suggerisce, era qui che la guardia principale  delle truppe della città di Clonmel era una volta appostata. Durante l’assedio di Clonmel nel 1650 la vecchia Manor Court fu distrutta, e dopo la restaurazione dei diritti palatinati del Duca di Ormond nel 1662, egli ordinò la costruzione di un nuovo palazzo di giustizia. Fu completata nel 1674. Corrono voci che Christopher Wren progettò la Main Guard, ma non esistono prove a supporto di questa affermazione. Le caratteristiche più affascinanti dell’edificio sono nei suoi cinque archi semi-circolari e un bellissimo orologio e campanile. Sul muro occidentale si possono vedere due stemmi: quello del Borgo di Clonmel e quello della famiglia Ormond, entrambi portano la date del 1675. In anni recenti la Main Guard ha subito un rinnovamento sostanziale da parte dell’ufficio dei lavori pubblici, che ha riportato l’edificio al suo originale aspetto del XVII secolo. La Main Guard è aperta ai visitatori da Marzo a tardo Ottobre.
 </p>
+
+<h2 class="korean"> 주요 방어 시스템 </h2>
+<p class="korean"> 
+이름에서 말해주듯이, 이 곳은 Clonmel 의 타운 부대의 주요 방어 시스템으로 자리 잡아있었다. the old Manor Court가 무너졌던 1650년에 Clonmel 이 포위 되었던 때와 그 후 Duke of Ormond’s palatinate right 을 반환 한 1662년에 그는 법원의 새로운 건물을 짓기를 명령하였다. 공사는 1674년에 완공되었다. Christopher Wren 이 main guard 를 설계했다는 루머가 돌았지만 이러한 주장을 뒷받침 하기 위한 근거는 없었다. 이 건물의 가장 두드러진 특징은 다섯개의 반원형 아치와 멋있는 시계와 종탑이다. 서쪽 벽에서는 두 개의 문장이 보인다 : Borough of Clonmel과 Ormond family의 것이며 둘 다 1675년 까지 그 역할을 하였다. 최근에 office of public works 에 의해서 상당한 보수를 거쳤으며 17세기의 원래의 디자인으로 돌아갔다. 이 건물은 3월부터 10월 말까지 방문객들에게 열려있다. </p>
 
   </div>
   <div class="col-sm-6">
@@ -270,6 +256,13 @@ La vieille église de Saint Mary est considérée comme une de la plus ancienne 
 Si crede che la vecchia chiesa di St. Mary sia la più vecchia chiesa di Clonmel, contea di Tipperary, Irlanda. Si crede sia stata costruita nel 1204 da William de Burgh. È stato il primo edificio ad essere citato nella città, apparendo in una lettera datata Agosto 1228. L’intera struttura superficiale del XIII secolo è scomparsa, ma i resti di un cavaliere corazzato sono stati ritrovati in una cripta di quel periodo, sotto la navata a sud, nel 1832. La chiesa com’è conosciuta oggi prese forma durante il XIV, XV e XVI secolo. L’attacco di Cromwell alla città costò alla chiesa la sua torre abitativa (oggi la sacrestia); il resto della chiesa rimase illeso. Le caratteristiche principali della chiesa sono un piazzale di 8 metri, un campanile di 25,5 metri, la torre abitativa orientale, e le finestre adornate del XVI secolo ad est e ad ovest. I più importanti lavori di ristrutturazione furono effettuati sull’edificio nel 1805. La torre aveva una volta, una guglia e un campanile in legno, che non sono stati ripristinati.
 
 </p>
+
+
+<h2 class="korean"> Old St.Mary’s Church </h2>
+<p class="korean"> 
+는 아일랜드의 Tipperary 주, Clonmel 에서 가장 오래된 교회라고 알려져있다. 1204년에 William de burgh 에 지어졌다. 1228년 8월이라고 적혀진 편지에 마을에서 처음 지어진 건물이라고 언급되어있다.  13세기때의 모든 지상 위 구조는 사라졌지만 갑옷을 입은 knight 의 잔해는 1832년, 그 당시에 지어진 북쪽 복도 아래의 둥근 아치에서 발견 되었다.  이 교회는 14, 15,1 16세기까지는 형태를 갖추고 있었다. Cromwell 의 공격 때에 교회의 tower house ( 현재의 제의실)  이 손실 되었고 다른 부분은 손상되지 않았다. 교회의 주요 특징은 평방 27ft 이며 종탑은 84ft 의 높이이고, 동쪽의 tower house 와 장식이 화려한 16세기의 동쪽 과 서쪽 창이다. 주로 보수공사는 1805년에 행해졌다. 한 때 tower 에는 종탑과 첨탑이 있었으나 복원되지 않았다. 
+</p>
+
   </div>
   <div class="col-sm-6 col-sm-pull-6">
   <img class="trailimg" src="images/stmarys.png" alt="Saint Mary's Church"/>
@@ -322,6 +315,12 @@ Aan het eind van O'Connell Street, bewaakt de indrukwekkende West Gate de ingang
 
 A guardia dell’entrata occidentale della città, alla fine di Clonmel St. vi è l’impressionante West gate. L’attuale struttura risale al 1831, essendo stata costruita da un mercante chiamato Joyce. L’edificio originale che sorgeva prima fu eretto per scopi difensivi, al fine di tenere la città normanna al sicuro dagli attacchi degli irlandesi. I nativi vivevano al di fuori delle mura della città, e oggi l’area occidentale della città oltre il Gate è chiamata “Irishtown”. Nonostante non fossero autorizzati a vivere all'interno delle mura della città, gli irlandesi erano, tuttavia, ammessi a Clonmel per commerciare alle fiere e ai mercati. Durante il corso dell’ultimo secolo il Gate cadde in rovina, spingendo gli abitanti interessati ad organizzare il suo restauro. È stato nuovamente coperto, gli archi sono stati rinforzati con travi d’acciaio e i pavimenti sono stati stabilizzati, anche questi con acciaio. La facciata orientale del Gate porta una lapide calcarea commemorativa dell’autore nato a Clonmel Lawrence Stern, scolpita da Frances Dietrich nel 1975.
 </p>
+
+<h2 class="korean"> 서쪽 게이트 </h2>
+<p class="korean">
+서쪽 게이트는 O’Connell 거리 끝에서 타운을 보호하는 인상적인 문이다. 현재의 구조는 Joyce 라 불리는 상인에 의해 지어졌으며 1831년부터 이어져 오고 있다. 이 전의 원래 건물은 Norman 마을을 Irish 들의 침입으로부터 막기 위한 방어를 목적으로 세워졌었다. 원주민들은 town 의 벽 너머에 살았고 오늘 날 서쪽 게이트 지역은 “Irishtown”이라고 불린다. 그들은 town 의 벽 안쪽에 거주할 수 없었음에도 불구하고 Irish 들은 Clonmel 내부에서 장 날이나 시장에서 거래는 하도록 허용되었다. 지난 세기 동안 황폐해져서 지역민들은 복구에 대해 생각하게 되었다. 지붕이 다시 씌워지고 아치는 철근으로 강화되었으며 계단도 철을 사용하여 복구했다. 게이의 동쪽면에는 Clonmel 에서 태어난 Lawrence stern 작가를 기념하는 석회석판이 세워져있고 이는 1975년에 Frances Dietrich에 의해 조각된 것이다. 
+</p>
+
   </div>
   <div class="col-sm-6">
   <img class="trailimg" src="images/westgate.png" alt="The West Gate"/>
@@ -380,6 +379,12 @@ L’Institution Borstal de Saint Patrick a été créé en 1906 comme un lieu de
 La Borstal Institution di San Patrizio, a Clonmel fu fondata nel 1906 come luogo di detenzione per giovani delinquenti di sesso maschile di età compresa tra 16 e 21 anni. Per un breve periodo durante la guerra civile irlandese, i prigioniere vennero trasferiti al riformatorio di Clogheen, mentre l’edificio di Borstal a Clonmel fu occupato delle forze militari dello Stato Libero d’Irlanda. I detenuti al riformatorio di  Clogheen furono a loro volta trasferiti ad altre unioni. Una settimana dopo, 17 dei ragazzi evasero e nella notte del 4 Novembre la città fu improvvisamente abbandonata dalle forze dello Stato Libero e occupata il giorno seguente dai repubblicani. Quattro giorni dopo i repubblicani dettero notizia che l’infrastruttura sarebbe dovuta essere sgomberata immediatamente in quanto erano intenzionati a dargli fuoco. Gli 81 detenuti e lo staff fu velocemente trasferito al santuario del vicino Fever Hospital.  Fu usato del petrolio per garantire che l’edificio principale sarebbe andato totalmente distrutto nonostante la pioggia torrenziale. Padre Nicholas Sheehy fu un prete romano cattolico del XVIII secolo che fu giustiziato con l’accusa di complicità in omicidio. Padre Sheehy fu impiccato, trascinato e squartato a Clonmel il 25 Marzo 1766. La sua testa fu recisa e appesa a un chiodo sopra il carcere di Clonmel come monito contro la violenza agraria. La sua testa è rimasta sopra il portico al carcere di  Clonmel per vent’anni.
 
 </p>
+
+<h2 class="korean"> 감옥 문 </h2>
+<p class="korean"> 
+1906년에 16세~21세의 어린 남자 범죄자들 구금하기 위해 Clonmel 에 St.partick 의 소년원이 세워졌다. Irish 내전의 짧은 기간 동안 재소자들은 clogheen 에 있는 workhouse로 보내졌고 Clonmel에 있는  소년원 건물은 irish free state military forces가 사용하였다. Clogheen 의 workhouse 의 재소자들은 차례대로 다른 조합으로 넘어갔다. 일 주일후 17명의 소년들이 도망쳤고 11월 4일 밤, 타운은 갑자기 free state force에 의해 버려졌으며 다음날 공화국군에게 넘어갔다. 4일 후 , 공화국군들은 불을 태울 작정으로 시설을 당장 비우라고 명령하였다. 81명의 재소자와 직원들은 재빠르게 근처의 fever hospital 보호구역으로 이동하였다. 폭우속에서도 휘발유를 사용하여 주 건물을 모두 불태웠다. Father Nicholas Sheehy 는 18세기의 irish roman catholic priest 이며 그는 살인의 방조죄로 처형당했다. 그는 1766년 3월 15일에 Clonmel 에서 처형당했다. 그의 머리는 agrarian violence에 대항하는 경고로써 참혹하게 잘린 뒤 대못으로 clonmael gaol에 못박혀졌다. 그의 머리는 20년간 Clonmel 감옥의 입구에 있었다. 
+</p>
+
   </div>
   <div class="col-sm-6 col-sm-pull-6 ">
   <img class="trailimg" src="images/jailgate.png" alt="The Jail Gate"/>
@@ -437,6 +442,13 @@ La date, 1792, vue sur l’arche en pierre peut être la date ou le bâtiment a 
 La data 1792 che si vede sull’arcata di pietra potrebbe essere la data di costruzione o, più probabilmente, la data del cortile dove Charles Bianconi stabilì la sua impresa di carrozze.
 Bianconi, un italiano di 16 anni, fu mandato in Irlanda per evitare uno scandalo in quanto considerato troppo amichevole con una ragazza del luogo che era già stata promessa in sposa ad un nobile sin dalla sua infanzia. Nel 1815 diede avvio ad un sistema di trasporto tra Clonmel e Cahir caratterizzato da un carro trainato da un solo cavallo. Nel 1825, i suoi carri ricoprivano 1.870 miglia al giorno e nel 1857, 4244 miglia al giorno in 22 contee. Le sue sedi centrali erano a Hearns e lui stesso visse lì dal 1826 al 1834 quando consegnò l’edificio al suo amico e assistente Daniel Hearn, che lo convertì in un hotel. Bianconi divenne amico del grande Daniel O’Connell. Contribuì notevolmente ai fondi per la lotta per l’emancipazione cattolica e divenne il terzo sindaco cattolico di Clonmel. L’entrata all’hotel Hearn fu ricostruita nel 1974 e ancora nel 1992 e l’interno fu ampiamente ristrutturato. Bianconi fu due volte sindaco di Clonmel e fu un datore di lavoro rigoroso ma giusto.
 </p>
+
+<h2 class="korean"> Hearn’s hotel </h2>
+<p class="korean">
+
+다듬돌로 된 아치형 입구에서 보이는 건물, 더 정확하게는 court yard 는 1792년에 Charles Bianconi가 그의 개입 교습 사업을 시작한 곳이다.  16 살의 Italian 인 Bianconi는 그가 귀족집안과 어릴 때부터 약혼 한 사이인 마을의 여자아이와 너무 친하게 지낸다는 스캔들을 피하기 위해 아일랜드로 보내졌다. 1815년에 그는 Clonmel 과 Cahir 사이를 다니는 한마리 말을 이용한 마차 운송을 시작하였다. 1825년 까지 그의 마차는 하루에 1870mile 을  달렸으며 1857년에는 22개 주에서 하루에 4244mile을 달렸다. 그의 본부는 Hearns에 있었고 그는 그곳에서 1826년부터 1834년에 그가 그 건물을 그의 친구이자 비서인 Daniel Hearn에게 넘겨주기 전 까지 혼자 살았으며 그의 친구는 그 건물을 호텔로 바꾸었다. Bianconi는 위대한 Daniel O’Connell의 친구가 되었다. 그는 catholic 해방을 위해 막대하게 지원하였고 Clonmel의 3번째 catholic mayor 가 되었다. Hearn’s hotel의 입구는 1974년에 다시 재건 되었고 1992년에 인테리어를 광범위하게 확장하였다. Bianconi는 두번이나 Clonmel 의 mayor 였고 엄격하지만 공정한 고용주였다. 
+</p>
+
   </div>
   <div class="col-sm-6">
   <img class="trailimg" src="images/hearnshotel.jpg" alt="Hearn's Hotel"/>
@@ -458,6 +470,7 @@ $(document).ready(function(){
 	$(".dutch").hide();
 	$(".french").hide();
 	$(".italian").hide();
+	$(".korean").hide();
 	
 
 
@@ -470,6 +483,7 @@ $("#irishBtn").click(function(){
 		$(".spanish").hide();
 		$(".french").hide();
 		$(".italian").hide();
+		$(".korean").hide();
 	//}
 	});
 	
@@ -482,6 +496,7 @@ $("#irishBtn").click(function(){
 		$(".dutch").hide();
 		$(".french").hide();
 		$(".italian").hide();
+		$(".korean").hide();
 	//}
 	});
 	
@@ -494,6 +509,7 @@ $("#irishBtn").click(function(){
 		$(".spanish").hide();
 		$(".french").hide();
 		$(".italian").hide();
+		$(".korean").hide();
 	//}
 	});
 	
@@ -507,6 +523,7 @@ $("#irishBtn").click(function(){
 		$(".dutch").hide();
 		$(".french").hide();
 		$(".italian").hide();
+		$(".korean").hide();
 	//}
 	});
 	
@@ -519,6 +536,7 @@ $("#irishBtn").click(function(){
 		$(".dutch").hide();
 		$(".english").hide();
 		$(".italian").hide();
+		$(".korean").hide();
 	//}
 	});
 	
@@ -531,6 +549,21 @@ $("#irishBtn").click(function(){
 		$(".spanish").hide();
 		$(".dutch").hide();
 		$(".english").hide();
+		$(".korean").hide();
+		
+	//}
+	});
+	
+	$("#koreanBtn").click(function(){
+	//alert("Button container clicked on");
+	//if(event.target == "englishBtn"){
+		$(".korean").show();
+		$(".french").hide();
+		$(".irish").hide();
+		$(".spanish").hide();
+		$(".dutch").hide();
+		$(".english").hide();
+		$(".italian").hide();
 		
 	//}
 	});
