@@ -4,10 +4,10 @@
 <link href='css/bootstrap.css ' rel='stylesheet '>
 <link href='css/main.css ' rel='stylesheet '>
  <!-- Load Bootstrap and FontAwesome CDN'ed from bootstrapcdn.com -->
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
+       <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
 
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
-
+-->
 <title> The Courthouse</title>
 
 
@@ -21,7 +21,7 @@
 
 	<div class="navbar-header">
 
-	<a href="index.html" class="navbar-brand"> Gael Trails </a>
+	<a href="index.html" class="navbar-brand"><img src="images/logoWS.png" class="logo" alt="Gael Trails logo - click to go to home page">  </a>
 
 	<button type="button" class="navbar-toggle" 
 		      data-toggle="collapse" 
@@ -76,7 +76,7 @@
   
 </div>
 
-<div class="navbar navbar-lower-1 navbar-default">
+<div class="navbar navbar-default navbar-lower-1 ">
 <div class="container">
 	<div class="navbar-lower">
     <div class="navbar-brand">Clonmel Heritage Trail</div>
@@ -482,8 +482,8 @@ Bianconi, un italiano di 16 anni, fu mandato in Irlanda per evitare uno scandalo
 
 <script src='js/bootstrap.js '></script>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+-->
 <script>
 $(document).ready(function(){
 	$(".irish").hide();
@@ -588,6 +588,9 @@ $("#irishBtn").click(function(){
 		
 	//}
 	});
+	$('.navbar-lower').affix({
+  offset: {top: 200}
+});
 	
 	document.addEventListener('play', function(e){
     var audios = document.getElementsByTagName('audio');
