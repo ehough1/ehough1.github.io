@@ -1,5 +1,28 @@
 $(document).ready(function(){
   
+  function getAllNames(){
+    
+    $.ajax({
+      method: "GET",
+      url: "//lit-basin-4940.herokuapp.com/api/allNames"
+    }).done(function(response){
+      console.log(response.allNames);
+      var theNamesHtml = '<ul id="allNames">';
+      for(var i=0; i < response.allNames.length; i++){
+        theNamesHtml += "<li>" +response.allNames[i] + "</li>";
+      }
+      
+      theNamesHtml += "</ul>"
+      $('div#myNameResponse').html(theNamesHtml);
+      setTimeout(getAllNames, 1000);
+    }).fail(function(msg){
+      console.log(msg);
+    });
+  }
+  
+  getAllNames();
+  
+  
   $('button#yourNameButton').click(function(){
     $.ajax({
       method: "GET",
@@ -16,6 +39,7 @@ $(document).ready(function(){
     console.log("button clicked");
     
     var typedName = $('input#myName').val();
+    $('input#myName').val("");
     
     $.ajax({
       method: "POST",
