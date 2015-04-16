@@ -5,17 +5,44 @@ To change this template use Tools | Templates.
 <html>
 <head>
     <title>Cool App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
 </head>
-<body>
- <h1>Welcome to my cool app</h1>
+<body class="container">
+  <div class="row">
+    <div class="sixteen columns">
+      <h1>Welcome to my cool app</h1>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="three columns">
+      <button id="yourNameButton">
+        Get App Button
+      </button>
+    </div>
+    <div class="nine columns">
+      <div id="yourName">
+    </div>
+  </div>
+  </div>
   
+  <div class="row">
+    <div class="nine columns">
+      <input type="text" name="myName" id="myName">
+    </div>
+    <div class="three columns">
+      <button id="myName">
+        Enter Your Name
+      </button>
+    </div>
+  </div>
   
-  <button id="yourNameButton">
-    Get App Button
-  </button>
-  
-  <div id="yourName">
-    
+  <div class="row">
+    <div class="sixteen columns" id="myNameResponse">
+      
+    </div>
   </div>
   
   <script type=text/javascript src="https://code.jquery.com/jquery-1.11.2.js"></script>
