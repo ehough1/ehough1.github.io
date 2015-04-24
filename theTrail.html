@@ -3,16 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='css/bootstrap.css ' rel='stylesheet '>
     <link href='css/main.css ' rel='stylesheet '>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap Core CSS -->
+    
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" />
+    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+
     <!-- Load Bootstrap and FontAwesome CDN'ed from bootstrapcdn.com -->
     <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
 
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 -->
-    <title> The Trail</title>
+    <title>The Trail</title>
 
 
 </head>
@@ -21,7 +37,7 @@
 <body>
 
 
-    <div class='navbar navbar-default navbar-fixed-top'>
+    <!--<div class='navbar navbar-default navbar-fixed-top'>-->
         <div class='container'>
 
             <div class="navbar-header">
@@ -43,7 +59,7 @@
                 <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
                 <li><a href="contactUs.html" data-target="#" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#contactUs" class="scroll-link" data-id="contactUs">Contact Us</a></li>
+                        <li><a href="index.html#contact" class="scroll-link" data-id="contactUs">Contact Us</a></li>
                         <!-- Add a divider to the menu items to divide them up a bit - makes them easier to see and read-->
                         <li class="divider"></li>
                         <li><a href='http://twitter.com/GaelTrails '>Twitter</a></li>
@@ -72,20 +88,17 @@
 
             </ul>
         </div>
-    </div>
 
-
-    <div class="divide-nav">
 
     </div>
 
-    <div class="navbar navbar-default navbar-lower-1 ">
+    <!--<div class="navbar navbar-default navbar-lower-1 ">
         <div class="container">
             <div class="navbar-lower">
                 <div class="navbar-brand">Clonmel Heritage Trail</div>
 
 
-                <!-- Maybe create a list to set the buttons??? -->
+                
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 
@@ -98,9 +111,7 @@
 
 
 
-                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-
-                    <!--<ul class="nav navbar-nav navbar-right">-->
+               
                     <li>
                         <a href="https://www.facebook.com/clairemfromcork">
                             <i class="icon icon-facebook"></i>
@@ -120,10 +131,7 @@
                         </a>
                     </li>
 
-
-                    <!--<li><a href="https://twitter.com/clairemfromcork" class="twitter-follow-button" data-show-count="false">Follow @clairemfromcork</a></li>-->
                 </ul>
-                <!-- Place this tag after the last widget tag. -->
 
             </div>
         </div>
@@ -131,7 +139,7 @@
 
     <div class="divide-nav"></div>
 
-
+-->
     <div class="btnContainer">
         <div class="row text-center">
             <div class="col-sm-12">
@@ -215,7 +223,39 @@
 
             </div>
             <div class="col-sm-6">
-                <img class="trailimg" src="images/mainguard.jpg" alt="The Main Guard Building" />
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/mainguard/mainguard.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="images/mainguard/mainguard1.jpg" alt="...">
+    </div>        <div class="item">
+      <img src="images/mainguard/mainguard4.jpg" alt="...">
+    </div>    <div class="item">
+      <img src="images/mainguard/mainguard5.jpg" alt="...">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
             </div>
         </div>
@@ -518,6 +558,18 @@
 
 
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+        
+                    <p>Copyright &copy; Geal Trails</p>
+                </div>
+            </div>  
+        </div>
+    </footer>
+
 
 
 

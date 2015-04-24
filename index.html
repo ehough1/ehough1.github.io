@@ -1,368 +1,293 @@
-﻿<!DOCTYPE html>
-<html lang ="en">
-
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<link href='css/bootstrap.css ' rel='stylesheet '>
-<link href='css/main.css ' rel='stylesheet '>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>Gael Trails</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-<title> Gael Trails</title>
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" />
+    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+
 </head>
 
+<body data-spy="scroll">
 
-<body>
-
-<div class='navbar navbar-default navbar-fixed-top'>
-<div class='container'>
-
-	<div class="navbar-header">
-
-	<a href="index.html" class="navbar-brand"> Gael Trails </a>
-
-	<button type="button" class="navbar-toggle" 
-		      data-toggle="collapse" 
-		      data-target=".navbar-collapse">
-
-	
-		<span class="sr-only">Toggle Navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-	</div>
-
-	<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-            <li><a href="index.html" >Home</a></li>
-            
-            
-            <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
-            <li><a href="contactUs.html" data-target="#" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-            <li><a href="#contactUs" class="scroll-link" data-id="contactUs">Contact Us</a></li>
-            <!-- Add a divider to the menu items to divide them up a bit -->
-            <li class="divider"></li>
-            <li><a href='http://twitter.com/GaelTrails '>Twitter</a></li>
-            <li><a href='http://facebook.com/GaelTrails '>Facebook</a></li>
-            </ul>
+    <div class="container">
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li class="gn-search-item">
+                                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.gealtrails422306&hl=en" class="gn-icon gn-icon-download">Download our App</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="gn-icon gn-icon-pictures">The Trail</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="gn-icon gn-icon-archive">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /gn-scroller -->
+                </nav>
             </li>
-            
-            
-            <li><a href="theTrail.html" data-toggle="dropdown">The Trail <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-            <li><a href="theTrail.html"> The Trail</a></li>
-            <li class="divider"></li>
-            <li><a href="theTrail.html#theMainGuard"> The Main Guard </a></li>
-            <li class="divider"></li>
-            <li><a href="theTrail.html#oldSaintMarysChurch"> Old Saint Mary's Church </a></li>
-            <li class="divider"></li>
-            <li><a href="theTrail.html#theWestGate"> The West Gate </a></li>
-            <li class="divider"></li>
-            <li><a href="theTrail.html#theJailGate"> The Jail Gate </a></li>
-            <li class="divider"></li>
-            <li><a href="theTrail.html#hearnsHotel"> Hearn's Hotel </a></li>
-            
-            </ul>
+            <li><a href="index.html"><h2 id="navh2" class="hidden-xs">Clonmel Heritage Trail</h2><p id="navh4" class="hidden-sm hidden-md hidden-lg">Clonmel Heritage Trail</p></a></li>
+            <li>
+                <ul class="company-social hidden-xs">
+                    <li class="social-facebook"><a href="http://www.facebook.com/gaeltrails" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter"><a href="http://www.twitter.com/gaeltrails" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-google"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
             </li>
-            
-          </ul>
-</div>
-</div>
-
-<div class="divide-nav">
-  
-</div>
-
-<div class="navbar navbar-lower-1 navbar-default">
-<div class="container">
-	<div class="navbar-lower">
-    <div class="navbar-brand">Clonmel Heritage Trail</div>
-    
-    
-    
-    <!-- Maybe create a list to set the buttons??? -->
-    <ul class="nav navbar-nav navbar-right">
- 
-    <li><a href="https://twitter.com/clairemfromcork" class="twitter-follow-button" data-show-count="false">Follow @clairemfromcork</a></li>
-    <li><div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/106539828774644183602" data-rel="author"></div></li>
-</ul>
-<!-- Place this tag after the last widget tag. -->
-
-</div>
-</div>
-</div>
-
-<div class="divide-nav"></div>
-
-
-<div class ="spacerContainer">
-<div class="row text-center">
-  <div class="col-sm-12">
-  </div>
-  </div>
-  </div>
-        
-
-<div class ="container">        
-        
-       <div id="slideshow-of-images" class="carousel slide col-xs-offset-3 col-xs-6 col-xs-offset-3" data-ride="carousel">
-			
-     <ol class="carousel-indicators">
-    <li data-target="#slideshow-of-images" data-slide-to="0" class="active"></li>
-    <li data-target="#slideshow-of-images" data-slide-to="1"></li>
-    <li data-target="#slideshow-of-images" data-slide-to="2"></li>
-    <!--<li data-target="#slideshow-of-images" data-slide-to="3"></li>-->
-    
-  </ol>
-  
-  
-     
-     <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/westgate.png" alt="The West Gate">
-      <div class="carousel-caption">
-        <h3>The West Gate</h3>
-        <p>The West Gate in the centre of Clonmel Town</p>
-      </div>
+        </ul>
     </div>
-     
-     <div class="item">
-      <img src="images/hearnshotel.jpg" alt="Hearn's  Hotel">
-      <div class="carousel-caption">
-        <h3>Hearn's Hotel</h3>
-        <p>Hearn's Hotel, the start of Bianconi Drive</p>
-      </div>
-    </div>
-    
-    
-      <div class="item">
-      <img src="images/mainguard.jpg" alt="The Main Guard">
-      <div class="carousel-caption">
-        <h3>The Main Guard</h3>
-        <p>The Main Guard, steeped in history</p>
-      </div>
-    </div>
-    
-   <!--<div class="item">
-      <img src="images/jailgatae.jpg" alt="Jail Gate">
-      <div class="carousel-caption">
-        <h3>Jail Gate</h3>
-        <p>Jail Gate, steeped in history</p>
-      </div>
-    </div>-->
-    
-  </div>
-  
 
-<!-- Left and right controls -->
-  <a class="left carousel-control" href="#slideshow-of-images" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#slideshow-of-images" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
- </div>
-
-
-<div class ="spacerContainer">
-<div class="row text-center">
-  <div class="col-sm-12">
-  </div>
-  </div>
-  </div>
-  
-  
-  
-<div class ="container">
-<div class="row features">
-
-	<div class="row text-center well">
-		
-		<div class="col-md-12">
-
-			<i class="glyphicon glyphicon-briefcase"></i>
-
-			<h3> Clonmel Heritage Trail </h3>
-			<p class='lead '>
-				17 sites of interest in Clonmel, Co.Tipperary
-			</p>
-
-			<button type='button' class="btn btn-lg btn-info"> How It Works </button>
-			<button type='button' class="btn btn-lg btn-primary"> Download </button>
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="col-md-12">
-			<h1> How It Works </h1>
-		</div>
-	</div>
-
-
-
-<div class="row features well">
-<div class="col-md-4 col-sm-4 col-xs-3">
-    <i class="glyphicon glyphicon-download"></i>
-
-    <h3> Download the app </h3>
-    <p>
-        Download our free app from 
-        </p>
-<p><i class="glyphicon glyphicon-download"></i> <i class="glyphicon glyphicon-download"></i></p>
-    
-</div>
-
-
-<div class ="col-md-4 col-sm-4 col-xs-3">
-    <i class="glyphicon glyphicon-briefcase"></i>
-
-    <h3> Plan your trail </h3>
-    <p>
-        Decide which sites you would like to visit
-    </p>
-</div>
-
-
-<div class ="col-md-4 col-sm-4 col-xs-3">
-    <i class="glyphicon glyphicon-briefcase"></i>
-
-    <h3> Take Me There </h3>
-    <p>
-        Plan your trail using google maps
-    </p>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<div class="container">
-  <h2>Contact Us</h2>
-  <a id ="contactUs"></a>
-  
-  <form class="form-horizontal" role="form">
-    <div class="form-group">
-     <label class="control-label col-sm-2" >Name:</label>
-      <div class="col-sm-6">          
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
-      </div>
-    </div>
-      
-    
-    <div class="form-group">
-     <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-6">
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-      </div>
-    </div>
-    
-    <div class="form-group">        
-      <label class="control-label col-sm-2">Phone:</label>
-        <div class="col-sm-6">          
-        <input type="text" class="form-control" id="phone" placeholder="Enter Your Phone Number">
-      </div>
-      </div>
-    
-    
-    <!--<div class="form-group">        
-      <label class="control-label col-sm-2">Message</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" id="textArea" placeholder="Text input">
-      </div>
-      </div>-->
-      
-      
-    <div class="form-group">        
-      <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-info">Submit</button>
-      </div>
-    </div>  
-  </form>
-</div>
-
-
-<div class="footer">
-      <div class="container">
-        <div class="row">
-         <div class="col-md-3 col-sm-3 col-xs-3">
-          <h4>Who We Are</h4>
-          <p><i>Gael Trails</i> has been created by LIT Students</p>
-          
-          </div>
-          
-           
-                       
-          <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="col-md-offset-1">
-          <h4>Links</h4>
-              </div>
-          <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href='contactUs.html '>Contact Us</a></li>
-            <li><a href='theTrail.html '>The Trail</a></li>
-          </ul>
-          </div>
-
-          <div class="col-md-3 col-sm-3 col-xs-3">
-          <h4>Stay in Touch</h4>
-          <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href='contactUs.html '>Contact Us</a></li>
-            <li><a href='http://twitter.com/GaelTrails '>Twitter</a></li>
-            <li><a href='http://facebook.com/GaelTrails '>Facebook</a></li>
-          </ul>
-          </div>
-
-          <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="col-md-offset-1">
-          <h4>Contact Us</h4>
-            </div>
-          <ul class="list-unstyled">
-            <li>LIT, Clonmel</li>
-           </ul>
-          <p>Gael Trails ©2015.</p>
-          </div>
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+        <div class="slogan">
+            <img class="img-responsive col-lg-offset-3" src="images/logoWS.png" alt="navlogo" />
+            <h1>Exploring the Clonmel Heritage Trail</h1>
+            <a href="#about" class="btn btn-skin scroll">Learn more</a>
         </div>
-      </div>
-    </div>
+
+    </section>
+    <!-- /Section: intro -->
+
+    <!-- Section: about -->
+    <section id="about" class="home-section text-center bg-gray">
+        <div class="heading-about marginbot-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <div class="section-heading">
+                            <h2><a href="theTrail.html">The Trail</a></h2>
+                            <p id="sites">5 sites of interest on the Clonmel Heritage Trail</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row-centered">
+
+                <a href="theTrail.html#theMainGuard">
+                    <div class="col-xs-12 col-sm-3 col-centered">
+
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>The Main Guard</h5>
+                                <p class="subtitle">O'Connell Street</p>
+                                <div class="avatar"><img src="images/mainguard.jpg" alt="" class="img-responsive" /></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="theTrail.html#theWestGate">
+                    <div class="col-xs-12 col-sm-3 col-sm-offset-5 col-centered">
+
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>The West Gate</h5>
+                                <p class="subtitle">O'Connell Street</p>
+                                <div class="avatar"><img src="images/westgate.png" alt="" class="img-responsive" /></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
 
 
 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js '></script>
-<script src='js/bootstrap.js '></script>
-<script>
+            <div class="row-centered">
+                <a href="theTrail.html#hearnsHotel">
+                    <div class="col-xs-12 col-sm-3 col-centered">
 
-<!-- Found the code online to scroll to the anchor http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
-$(document).ready(function(){
-    $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-  
-});
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>Hearns Hotel</h5>
+                                <p class="subtitle">Parnell Street</p>
+                                <div class="avatar"><img src="images/hearnshotel.jpg" alt="" class="img-responsive" /></div>
+                            </div>
+                        </div>
 
-$("#slideshow-of-images").carousel();
+                    </div>
+                </a>
+
+                <a href="theTrail.html#theJailGate">
+                    <div class="col-xs-12 col-sm-3 col-sm-offset-1 col-centered">
+
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>The Jail Gate</h5>
+                                <p class="subtitle">Emmet Street</p>
+                                <div class="avatar"><img src="images/jailgate.png" alt="" class="img-responsive" /></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="theTrail.html#oldSaintMarysChurch">
+                    <div class="col-xs-12 col-sm-3 col-sm-offset-1 col-centered">
+
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>Old St. Mary's Church</h5>
+                                <p class="subtitle">Mary Street</p>
+                                <div class="avatar"><img src="images/stmarys.png" alt="" class="img-responsive" /></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /Section: about -->
 
 
-</script>
+    <!-- Section: services -->
+
+
+    <!-- Section: works -->
+
+
+    <!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+        <div class="heading-contact marginbot-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <div class="section-heading">
+                            <h2>Get in touch</h2>
+                            <p>Have a question or comment? Don't hesitate to contact us</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-md-offset-2">
+                    <div class="boxed-grey">
+                        <form id="contact-form" method="POST" action="/submitForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">
+                                            Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">
+                                            Subject</label>
+                                        <select id="subject" name="subject" class="form-control" required="required">
+                                            <option value="na" selected="">Choose One:</option>
+                                            <option value="service">General Customer Service</option>
+                                            <option value="suggestions">Suggestions</option>
+                                            <option value="product">Product Support</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Message</label>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                                        Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="widget-contact row">
+                        <div class="col-lg-6">
+                            <address>
+				  <strong>Gael Trails</strong><br>
+				  Cashel Court,<br>
+				  Clonmel, Co. Tipperary<br>
+				  <abbr title="Phone">P: </abbr> (087) 9115587
+				</address>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <address>
+				  <strong>Email</strong><br>
+				  <a href="mailto:#">eimear.hough1@gmail.com</a><br />
+				   <!--<a href="mailto:#">name.name@example.com</a>-->
+				</address>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /Section: contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+
+                    <p>Copyright &copy; Geal Trails</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
 
 </body>
 

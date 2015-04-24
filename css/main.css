@@ -54,3 +54,30 @@ height:100%;
 .rw-ui-container{
 z-index: 10;
 }
+
+audio{
+width: 100%;
+}
+
+
+img[Gael Trails logo - click to go to home page]{
+z-index: 10;
+}
+
+img[navlogo]{
+height: 100%;
+width: 100%;
+}
+
+#navh2{
+margin-top: 12px;
+}
+
+#navh4{
+font-size: 95%;
+margin-top: 20px;
+}
+
+#sites{
+font-size: 200%;
+}
