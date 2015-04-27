@@ -40,3 +40,53 @@
 
 	
 })(jQuery);
+
+
+
+
+////////////////////////////////////
+
+   /*Form Submit Ajax Call*/
+   
+////////////////////////////////////
+
+
+
+$(document).ready(function(){
+ 
+  var endPoint = "//serene-stream-6052.herokuapp.com";
+  
+  var name = $('#name').val();
+  var email = $('#email').val();
+  var subject = $('#subject').val();
+  var message = $('#message').val();
+  
+   $('button#btnContactUs').click(function(){
+     
+     $.ajax({
+        type: "GET",
+        url: endPoint + "/api/",
+		data: "?name=name&email=email&subject=subject&message=message"
+      }).done(function( data ) {
+          /*
+           * Remember that this javascript is running in the browser (not the server) so when
+           * the code logs to the console it is logging to the browser console.
+           */
+          console.log( "Received server response: " + data.content );
+          //$('#button-one-response').html(data.htmlContent);
+		  alert("Message Sent");
+        }).fail(function(msg){
+          console.log("Ajax fail: " + JSON.stringify(msg));
+          //$('#button-one-response').html('<div class="error">Oops we\'ve got an error: <pre>' + JSON.stringify(msg) + '</pre></div>');
+		  alert("Ajax Failed");
+        });
+       });
+
+});
+
+
+
+
+
+
+
