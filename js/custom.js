@@ -54,7 +54,7 @@
 
 $(document).ready(function(){
  
-/*  //var endPoint = "http://serene-stream-6052.herokuapp.com";
+  //var endPoint = "http://serene-stream-6052.herokuapp.com";
   var endPoint = "//serene-stream-6052.herokuapp.com";
   
   
@@ -67,7 +67,7 @@ $(document).ready(function(){
   
      
      $.ajax({
-        type: "Post",
+        type: "GET",
         url: endPoint + "/api/",
 		data: {name: name, email:email, subject:subject, message:message}
       }).done(function(data) {
@@ -79,31 +79,7 @@ $(document).ready(function(){
           //$('#button-one-response').html('<div class="error">Oops we\'ve got an error: <pre>' + JSON.stringify(msg) + '</pre></div>');
 		  alert("Ajax Failed "+ JSON.stringify(msg));
         });
-       });*/
-	   
-	   $("#contact-form").submit(function(e)
-{
-    var postData = $(this).serializeArray();
-    var formURL = $(this).attr("action");
-    $.ajax(
-    {
-        url : formURL,
-        type: "POST",
-        data : postData,
-        success:function(data, textStatus, jqXHR) 
-        {
-            //data: return data from server
-        },
-        error: function(jqXHR, textStatus, errorThrown) 
-        {
-            //if fails      
-        }
-    });
-    e.preventDefault(); //STOP default action
-    e.unbind(); //unbind. to stop multiple form submit.
-});
- 
-$("#contact-form").submit(); //Submit  the FORM
+       });
 
 });
 
