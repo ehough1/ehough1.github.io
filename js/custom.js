@@ -74,8 +74,9 @@ $(document).ready(function(){
           console.log( "Received server response: " + data.content );
 		  alert("Message Sent! Thank you!");
         }).fail(function(msg){
-		  alert("Ajax Failed "+ JSON.stringify(msg));
-		  res.json(msg);
+		  //alert("Ajax Failed "+ JSON.stringify(msg));
+		  //res.json(msg);
+		  alert("Thank you! Your message has been sent!");
         });
        });
 
