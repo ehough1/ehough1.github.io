@@ -57,15 +57,17 @@ $(document).ready(function(){
   //var endPoint = "http://serene-stream-6052.herokuapp.com";
   var endPoint = "//serene-stream-6052.herokuapp.com";
   
-  var name = $('#name').val();
+  
+   $('button#btnContactUs').click(function(){
+	   
+	   var name = $('#name').val();
   var email = $('#email').val();
   var subject = $('#subject').val();
   var message = $('#message').val();
   
-   $('button#btnContactUs').click(function(){
      
      $.ajax({
-        type: "GET",
+        type: "Post",
         url: endPoint + "/api/",
 		data: {name: name, email:email, subject:subject, message:message}
       }).done(function(data) {
