@@ -72,13 +72,10 @@ $(document).ready(function(){
 		data: {name: name, email:email, subject:subject, message:message}
       }).done(function(data) {
           console.log( "Received server response: " + data.content );
-          //$('#button-one-response').html(data.htmlContent);
-		  alert("Message Sent");
+		  alert("Message Sent! Thank you!");
         }).fail(function(msg){
-          //console.log("Ajax fail: " + JSON.stringify(msg));
-          //$('#button-one-response').html('<div class="error">Oops we\'ve got an error: <pre>' + JSON.stringify(msg) + '</pre></div>');
-		  //alert("Ajax Failed "+ JSON.stringify(msg));
-		  alert( "Thank you! Your message has been sent");
+		  alert("Ajax Failed "+ JSON.stringify(msg));
+		  res.json(msg);
         });
        });
 

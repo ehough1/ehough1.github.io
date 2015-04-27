@@ -12,6 +12,9 @@ font-size:32px;
 	font-size:36px;
 }
 
+.btn {
+	margin-left: 1em; min-width: 7em;
+}
 
 .btnContainer{
 padding:20px;

@@ -94,19 +94,37 @@
 
    
 
-    <div class="btnContainer">
+      <div class="btnContainer">
         <div class="row text-center">
             <div class="col-sm-12">
-                <!--<div class="btn-group" data-toggle="buttons-radio">-->
-                <button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info">English </button>
-                <button type='button' id="irishBtn" data-target="irish" class="btn btn-lg btn-info"> Irish </button>
-                <button type='button' id="spanishBtn" data-target="spanish" class="btn btn-lg btn-info"> Spanish </button>
-                <button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info">Dutch </button>
-                <button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info"> French </button>
-                <button type='button' id="italianBtn" data-target="italian" class="btn btn-lg btn-info"> Italian </button>
-                <button type='button' id="koreanBtn" data-target="korean" class="btn btn-lg btn-info"> Korean </button>
+                
+                <button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info hidden-xs hidden-sm englishButton">English </button>
+                <button type='button' id="irishBtn" data-target="irish" class="btn btn-lg btn-info hidden-xs hidden-sm irishButton"> Irish </button>
+                <button type='button' id="spanishBtn" data-target="spanish" class="btn btn-lg btn-info hidden-xs hidden-sm spanishButton"> Spanish </button>
+                <button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info hidden-xs hidden-sm dutchButton">Dutch </button>
+                <button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info hidden-xs hidden-sm frenchButton"> French </button>
+                <button type='button' id="italianBtn" data-target="italian" class="btn btn-lg btn-info hidden-xs hidden-sm italianButton"> Italian </button>
+                <button type='button' id="koreanBtn" data-target="korean" class="btn btn-lg btn-info hidden-xs hidden-sm koreanButton"> Korean </button>
 
-                <!--</div>-->
+             <div class="btn-group" role="group">
+    <button type="button" class="btn btn-info dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown" aria-expanded="false">
+      Select your language
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+
+                <li><button type='button'  data-target="english" class="btn btn-lg btn-info englishButton">English </button></li>
+                <li><button type='button'  data-target="irish" class="btn btn-lg btn-info irishButton"> Irish </button></li>
+                <li><button type='button'  data-target="spanish" class="btn btn-lg btn-info spanishButton"> Spanish </button></li>
+                <li><button type='button'  data-target="dutch" class="btn btn-lg btn-info dutchButton">Dutch </button></li>
+                <li><button type='button'  data-target="french" class="btn btn-lg btn-info frenchButton"> French </button></li>
+                <li><button type='button'  data-target="italian" class="btn btn-lg btn-info italianButton"> Italian </button></li>
+                <li><button type='button'  data-target="korean" class="btn btn-lg btn-info koreanButton"> Korean </button></li>
+
+
+    </ul>
+  </div>
+                
             </div>
         </div>
     </div>
@@ -985,7 +1003,7 @@
 
 
 
-            $("#irishBtn").click(function()
+            $(".irishButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "irishBtn"){
@@ -999,7 +1017,7 @@
                 //}
             });
 
-            $("#spanishBtn").click(function()
+            $(".spanishButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "spanishBtn"){
@@ -1013,7 +1031,7 @@
                 //}
             });
 
-            $("#dutchBtn").click(function()
+            $(".dutchButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "dutchBtn"){
@@ -1028,7 +1046,7 @@
             });
 
 
-            $("#englishBtn").click(function()
+            $(".englishButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "englishBtn"){
@@ -1042,7 +1060,7 @@
                 //}
             });
 
-            $("#frenchBtn").click(function()
+            $(".frenchButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "englishBtn"){
@@ -1056,7 +1074,7 @@
                 //}
             });
 
-            $("#italianBtn").click(function()
+            $(".italianButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "englishBtn"){
@@ -1071,7 +1089,7 @@
                 //}
             });
 
-            $("#koreanBtn").click(function()
+            $(".koreanButton").click(function()
             {
                 //alert("Button container clicked on");
                 //if(event.target == "englishBtn"){
