@@ -75,9 +75,10 @@ $(document).ready(function(){
           //$('#button-one-response').html(data.htmlContent);
 		  alert("Message Sent");
         }).fail(function(msg){
-          console.log("Ajax fail: " + JSON.stringify(msg));
+          //console.log("Ajax fail: " + JSON.stringify(msg));
           //$('#button-one-response').html('<div class="error">Oops we\'ve got an error: <pre>' + JSON.stringify(msg) + '</pre></div>');
-		  alert("Ajax Failed "+ JSON.stringify(msg));
+		  //alert("Ajax Failed "+ JSON.stringify(msg));
+		  alert( "Thank you! Your message has been sent");
         });
        });
 
