@@ -1,4 +1,4 @@
-(function ($) {
+/*(function ($) {
 
 	new gnMenu( document.getElementById( 'gn-menu' ) );
 
@@ -48,7 +48,7 @@
 
    /*Form Submit Ajax Call*/
    
-////////////////////////////////////
+////////////////////////////////////*/
 
 
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
         }).fail(function(msg){
 		  //alert("Ajax Failed "+ JSON.stringify(msg));
 		  //res.json(msg);
-		  alert("Thank you! Your message has been sent!");
+		  alert("Thank you! Your message has been sent! :)");
         });
        });
 
