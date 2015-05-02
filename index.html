@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Clonmel, a town with amazing history and amazing people. From the defence of Cromwell to Frank Patterson, this town has history around every corner. One feature that displays this town’s history is the Clonmel Heritage Trail, a series of historical sites around Clonmel that make up a tour of the town">
+    <meta name="author" content="Claire Murray & Eimear Hough - GaelTrail">
+    <meta name="robots" content="index, follow">
 
-    <title>Gael Trails</title>
+    <title>Gael Trails, Clonmel Heritage Trail</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -17,48 +18,87 @@
     <link href="css/nivo-lightbox.css" rel="stylesheet" />
     <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+   
 
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
-
+    <link href="css/main.css" rel="stylesheet" />
+    
 </head>
 
 <body data-spy="scroll">
+<div class='navbar navbar-default navbar-fixed-top'>
+<div class='container'>
 
-    <div class="container">
-        <ul id="gn-menu" class="gn-menu-main">
-            <li class="gn-trigger">
-                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-                <nav class="gn-menu-wrapper">
-                    <div class="gn-scroller">
-                        <ul class="gn-menu">
-                            <li class="gn-search-item">
-                                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.gealtrails422306&hl=en" class="gn-icon gn-icon-download">Download our App</a>
-                            </li>
-                            <li>
-                                <a href="#about" class="gn-icon gn-icon-pictures">The Trail</a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="gn-icon gn-icon-archive">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /gn-scroller -->
-                </nav>
-            </li>
-            <li><a href="index.html"><h2 id="navh2" class="hidden-xs">Clonmel Heritage Trail</h2><p id="navh4" class="hidden-sm hidden-md hidden-lg">Clonmel Heritage Trail</p></a></li>
-            <li>
-                <ul class="company-social hidden-xs">
-                    <li class="social-facebook"><a href="http://www.facebook.com/gaeltrails" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li class="social-twitter"><a href="http://www.twitter.com/gaeltrails" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li class="social-google"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+                   
+                
+	<div class="navbar-header">
 
+	<a href="index.html" class="navbar-brand"> <h2>Gael Trails</h2> </a>
+
+	<button type="button" class="navbar-toggle" 
+		      data-toggle="collapse" 
+		      data-target=".navbar-collapse">
+
+	
+		<span class="sr-only">Toggle Navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	</div>
+
+	<ul class="nav navbar-nav navbar-right collapse navbar-collapse ourCustomNav">
+            <li><a href="https://play.google.com/store/apps/details?id=com.ionicframework.gealtrails422306&hl=en" ><h4>Download App</h4></a></li>
+            
+            
+            <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
+            <li><a href="contactUs.html" data-target="#" data-toggle="dropdown"><h4>Contact Us <span class="caret"></h4></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="#contactUs" class="scroll-link" data-id="contactUs"><h5>Contact Us</h5></a></li>
+            <!-- Add a divider to the menu items to divide them up a bit -->
+            <li class="divider"></li>
+            <li><a href='http://twitter.com/GaelTrails '><h6>Twitter</h6></a></li>
+            <li><a href='http://facebook.com/GaelTrails '><h6>Facebook</h6></a></li>
+            <li><a href='https://plus.google.com/101451135820169266578/posts '><h6>Google +</h6></a></li>
+            </ul>
+            </li>
+            
+            
+            <li><a href="theTrail.html" data-toggle="dropdown"><h4>The Trail <span class="caret"></h4></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="theTrail.html"><h5> The Trail</h5></a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#theMainGuard"><h5> The Main Guard </h5></a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#oldSaintMarysChurch"><h5> Old Saint Mary's Church</h5> </a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#theWestGate"><h5> The West Gate</h5> </a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#theJailGate"><h5> The Jail Gate </h5></a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#hearnsHotel"><h5> Hearn's Hotel</h5> </a></li>
+            </ul>
+            </li>
+            
+          
+            <li><ul class="company-social">
+            <li class="social-facebook hidden-xs"><a href="http://www.facebook.com/gaeltrails" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter hidden-xs"><a href="http://www.twitter.com/gaeltrails" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-google hidden-xs"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    </ul></li>
+            
+              </ul>
+            
+            
+          
+          
+          
+           
+          
+</div>
+</div>
     <!-- Section: intro -->
     <section id="intro" class="intro">
         <div class="slogan">
@@ -164,7 +204,7 @@
                 </a>
             </div>
         </div>
-        </div>
+
     </section>
     <!-- /Section: about -->
 
@@ -176,7 +216,7 @@
 
 
     <!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
+    <section id="contactUs" class="home-section text-center">
         <div class="heading-contact marginbot-50">
             <div class="container">
                 <div class="row">
@@ -216,7 +256,7 @@
                                     <div class="form-group">
                                         <label for="subject">
                                             Subject</label>
-                                        <select id="subject" name="subject" class="form-control" required="required">
+                                        <select id="subject" name="subject" class="form-control">
                                             <option value="na" selected="">Choose One:</option>
                                             <option value="service">General Customer Service</option>
                                             <option value="suggestions">Suggestions</option>
@@ -228,7 +268,7 @@
                                     <div class="form-group">
                                         <label for="name">
                                             Message</label>
-                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required placeholder="Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">

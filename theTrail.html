@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link href='css/bootstrap.css ' rel='stylesheet '>
-    <link href='css/main.css ' rel='stylesheet '>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Clonmel has a rich history and the stops on its heritage trail all have their own individual story to tell">
+    <meta name="author" content="Claire Murray & Eimear Hough - GaelTrails ">
 
 
     <!-- Bootstrap Core CSS -->
@@ -22,13 +22,14 @@
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
+    <link href='css/main.css ' rel='stylesheet '>
 
     <!-- Load Bootstrap and FontAwesome CDN'ed from bootstrapcdn.com -->
     <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
 
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
 -->
-    <title>The Trail</title>
+    <title>The Clonmel Heritage Trail, Co Tipperary</title>
 
 
 </head>
@@ -37,65 +38,95 @@
 <body>
 
 
-    <!--<div class='navbar navbar-default navbar-fixed-top'>-->
-        <div class='container'>
+<div class='navbar navbar-default navbar-fixed-top' id="trailPageNavBar">
+<div class='container'>
 
-            <div class="navbar-header">
+                   
+                
+	<div class="navbar-header">
 
-                <a href="index.html" class="navbar-brand"><img src="images/logoWS.png" class="logo" alt="Gael Trails logo - click to go to home page"> </a>
+	<a href="index.html" class="navbar-brand hidden-sm"> <h2>Gael Trails</h2> </a>
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	<button type="button" class="navbar-toggle" 
+		      data-toggle="collapse" 
+		      data-target=".navbar-collapse">
 
+	
+		<span class="sr-only">Toggle Navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	</div>
 
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-                <li><a href="index.html">Home</a></li>
-                <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
-                <li><a href="contactUs.html" data-target="#" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html#contact" class="scroll-link" data-id="contactUs">Contact Us</a></li>
-                        <!-- Add a divider to the menu items to divide them up a bit - makes them easier to see and read-->
-                        <li class="divider"></li>
-                        <li><a href='http://twitter.com/GaelTrails '>Twitter</a></li>
-                        <li><a href='http://facebook.com/GaelTrails '>Facebook</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="theTrail.html" data-toggle="dropdown">The Trail <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="theTrail.html"> The Trail</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#theMainGuard" class="scroll"> The Main Guard </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#oldSaintMarysChurch" class="scroll"> Old Saint Mary's Church </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#theWestGate" class="scroll"> The West Gate </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#theJailGate" class="scroll"> Jail Gate </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#hearnsHotel" class="scroll"> Hearn's Hotel </a></li>
-
-
-                        <!--<li><a href="#contactUs" class="scroll-link" data-id="contactUs">Contact Us</a></li>-->
-                    </ul>
-                </li>
-
+	<ul class="nav navbar-nav navbar-right collapse navbar-collapse ourCustomNav">
+            <li><a href="index.html" ><h4>Home</h4></a></li>
+            
+            
+            <!--Add a dropdown menu, hidden until it's clicked on.  Use the contact page if using older browsers or not js enabled -->
+            <li><a href="index.html/contactUs.html" data-target="#" data-toggle="dropdown"><h4>Contact Us <span class="caret"></h4></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="#contactUs" class="scroll-link" data-id="contactUs"><h5>Contact Us</h5></a></li>
+            <!-- Add a divider to the menu items to divide them up a bit -->
+            <li class="divider"></li>
+            <li><a href='http://twitter.com/GaelTrails '><h6>Twitter</h6></a></li>
+            <li><a href='http://facebook.com/GaelTrails '><h6>Facebook</h6></a></li>
+            <li><a href='https://plus.google.com/101451135820169266578/posts '><h6>Google +</h6></a></li>
             </ul>
-        </div>
-
-
-    </div>
-
+            </li>
+            
+            
+            <li><a href="theTrail.html" data-toggle="dropdown"><h4>The Trail <span class="caret"></h4></span></a>
+            <ul class="dropdown-menu">
+           
+            <li><a href="theTrail.html#theMainGuard"><h5> The Main Guard </h5></a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#oldSaintMarysChurch"><h5> Old Saint Mary's Church</h5> </a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#theWestGate"><h5> The West Gate</h5> </a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#theJailGate"><h5> The Jail Gate </h5></a></li>
+            <li class="divider"></li>
+            <li><a href="theTrail.html#hearnsHotel"><h5> Hearn's Hotel</h5> </a></li>
+            </ul>
+            </li>
+            
+          
+            <li><ul class="company-social">
+            <li class="social-facebook hidden-xs"><a href="http://www.facebook.com/gaeltrails" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter hidden-xs"><a href="http://www.twitter.com/gaeltrails" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-google hidden-xs"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    </ul></li>
+            
+              </ul>
+            
+            
+          
+          
+          
+           
+          
+</div>
+</div>
    
 
+   <div class="container">
+   		<div class="row hidden-xs hidden-sm hidden-lg col-md-12 text-center" style="margin-top:150px;">
+        		<button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info englishButton">English </button>
+                <button type='button' id="irishBtn" data-target="irish" class="btn btn-lg btn-info hidden-xs hidden-sm irishButton"> Irish </button>
+                <button type='button' id="spanishBtn" data-target="spanish" class="btn btn-lg btn-info hidden-xs hidden-sm spanishButton"> Spanish </button>
+                <button type='button' id="dutchBtn" data-target="dutch" class="btn btn-lg btn-info hidden-xs hidden-sm dutchButton">Dutch </button>
+        </div>
+        <div class="row hidden-xs hidden-sm hidden-lg col-md-12 text-center" style="margin-top:20px;">
+        		<button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info hidden-xs hidden-sm frenchButton"> French </button>
+                <button type='button' id="italianBtn" data-target="italian" class="btn btn-lg btn-info hidden-xs hidden-sm italianButton"> Italian </button>
+                <button type='button' id="koreanBtn" data-target="korean" class="btn btn-lg btn-info hidden-xs hidden-sm koreanButton"> Korean </button>
+                <button type='button' id="polishBtn" data-target="polish" class="btn btn-lg btn-info hidden-xs hidden-sm polishButton"> Polish </button>
+        </div>
+   </div>
+
       <div class="btnContainer">
-        <div class="row text-center">
+        <div class="row text-center hidden-md" style="margin-bottom:-80px;">
             <div class="col-sm-12">
                 
                 <button type='button' id="englishBtn" data-target="english" class="btn btn-lg btn-info hidden-xs hidden-sm englishButton">English </button>
@@ -105,6 +136,8 @@
                 <button type='button' id="frenchBtn" data-target="french" class="btn btn-lg btn-info hidden-xs hidden-sm frenchButton"> French </button>
                 <button type='button' id="italianBtn" data-target="italian" class="btn btn-lg btn-info hidden-xs hidden-sm italianButton"> Italian </button>
                 <button type='button' id="koreanBtn" data-target="korean" class="btn btn-lg btn-info hidden-xs hidden-sm koreanButton"> Korean </button>
+                <button type='button' id="polishBtn" data-target="polish" class="btn btn-lg btn-info hidden-xs hidden-sm polishButton"> Polish </button>
+                
 
              <div class="btn-group" role="group">
     <button type="button" class="btn btn-info dropdown-toggle hidden-md hidden-lg" data-toggle="dropdown" aria-expanded="false">
@@ -120,6 +153,8 @@
                 <li><button type='button'  data-target="french" class="btn btn-lg btn-info frenchButton"> French </button></li>
                 <li><button type='button'  data-target="italian" class="btn btn-lg btn-info italianButton"> Italian </button></li>
                 <li><button type='button'  data-target="korean" class="btn btn-lg btn-info koreanButton"> Korean </button></li>
+                <li><button type='button'  data-target="polish" class="btn btn-lg btn-info polishButton"> Polish </button></li>
+                
 
 
     </ul>
@@ -135,9 +170,10 @@
     <a id="theMainGuard"></a>
 
 
-    <div class="container">
-        <div class="row features well" id="mainGuard">
-            <div class="col-sm-6 fullHeight">
+    <div class="container containerFull">
+        <div class="row features well twelveColDiv">
+            <div class="col-sm-12 col-md-6 textDiv">
+            
 
 
                 <h2 class="english">The Main Guard</h2>
@@ -214,18 +250,32 @@
                         Your browser does not support the audio element.
                 </audio>
 
+          
+            
+            
+               <h2 class="polish">Straż Główna </h2>
+                <p class="polish">
+                   Jak wskazuje nazwa, to właśnie tutaj mieściła się kiedyś główna straż wojska miejskiego w Clonmel. Podczas oblężenia Clonmel w roku 1650, dawny sąd dworowy został zniszczony, i po odnowieniu praw palatyńskich księcia Ormond w 1662 roku, nakazał budowę nowego budynku. Budowa została zakończona w roku 1674. Istnieją przypuszczenia iż Christopher Wren zaprojektował Straż Główną, jednak nie ma dowodów które by potwierdzały tę teorię. Budynek ten charakteryzuje się pięcioma półkolnymi łukami jak również i okazałym zegarem i wieżą dzwonniczą. Po stronie zachodniej można ujrzeć dwa herby rodowe: herb Gminy Clonmel i rodziny Ormond, obydwa z 1675 roku. Ostatnio, Straż Główna została odnowiona przez Urząd Robót Publicznych, który przywrócił budynek do oryginalnego wyglądu z XVII wieku. Straż Główna jest otwarta dla zwiedzających od marca do późnego października.
+                </p>
+
+                <audio controls class="polish">
+                    <source src="audio/Polish/Polish_MainGuard.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+
             </div>
-            <div class="col-sm-6 pictureDiv">
+            
+            <div class="col-sm-12 col-md-6 picDiv">
                 
                
     <div class="row">
-        
-            <a href="#gallery" data-slide-to="0"><img class="img-responsive" src="images/mainguard.jpg" ></a>
-            <button class="btn btn-success btn-block btn-primary" id="imgbtn" data-toggle="modal" data-target="#myModal">View all Images</button>
+<!-- Main Guard Image Gallery  -->
+			 <a href="#gallery" data-slide-to="0"><img class="img-responsive mainImage" src="images/mainguard.jpg" alt="Main Guard, Clonmel, Co.Tipperary"></a>
+            <button class="btn btn-success btn-block btn-primary imgbtn" data-toggle="modal" data-target="#myModal">View all Images</button>
  
    
 </div>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -236,31 +286,31 @@
                 <div id="gallery" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/mainguard.jpg" alt="item1">
+                            <img src="images/mainguard.jpg" alt="Main Guard, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/mainguard/mainguard1.jpg" alt="item2">
+                            <img src="images/mainguard/mainguard1.jpg" alt="Main Guard, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                  
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/mainguard/mainguard2.jpg" alt="item3">
+                            <img src="images/mainguard/mainguard2.jpg" alt="Main Guard, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/mainguard/mainguard4.jpg" alt="item4">
+                            <img src="images/mainguard/mainguard4.jpg" alt="Main Guard, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/mainguard/mainguard5.jpg" alt="item4">
+                            <img src="images/mainguard/mainguard5.jpg" alt="Main Guard, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
@@ -281,8 +331,8 @@
 
     <a id="oldSaintMarysChurch"></a>
     <div class="container">
-        <div class="row features well">
-            <div class="col-sm-6 col-sm-push-6">
+        <div class="row features well twelveColDiv">
+            <div class="col-sm-12 col-md-6 textDiv">
 
                 <h2 class="english">Old St. Mary’s Church</h2>
                 <p class="english">
@@ -369,16 +419,29 @@
                         Your browser does not support the audio element.
                 </audio>
 
+
+<h2 class="polish"> Kościół pod wezwaniem Św Maryi Panny </h2>
+                <p class="polish">
+                  Kościół pod wezwaniem Św Maryi Panny jest uznawany za najstarszy kościół w Clonmel, województwie Tipperary. Podobno został zbudowany w roku 1204 przez William’a de Burgh’a. Jest to pierwszy budynek w Clonmel o którym pisano, i pierwsza wzmianka o kościele sięga listu z sierpnia 1228.  Cała struktura z 13 wieku zniknęła, jednak pozostałości zbroji rycerskiej z tamtego okresu zostały znalezione pod prawą nawą w roku 1832. Kościół jaki znamy dzisiaj nabierał kształtów podczas XIV, XV i XVI wieku. Najazd Cromwella pozbawił kościoła wieży (dzisiejszej zakrystii), reszta kościoła została nie naruszona. Głównymi cechami kościoła są: wieża dzwonnicza o szerokości 27 stop kwadratowych i wysokości 84 stop kwadratowych, wschodnia wieża, oraz ozdobne, 16 wieczne wschodnie i zachodnie okna. Poważna renowacja kościoła miała miejsce w 1805 roku. Wieża miała kiedyś drewnianą iglicę i dzwonnicę ktoóe nie zostały odrestaurowane.  
+                </p>
+
+                <audio controls class="polish">
+                    <source src="audio/Polish/Polish_OldStMarysChuch.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+
             </div>
-            <div class="col-sm-6 col-sm-pull-6">
+            <div class="col-sm-12 col-md-6 picDiv">
                 <div class="row">
         
-            <a href="#oldStMarysGallery" data-slide-to="0"><img class="img-responsive" src="images/stmarys.png" ></a>
-            <button class="btn btn-success btn-block btn-primary" id="imgbtn" data-toggle="modal" data-target="#oldStMarysGallery">View all Images</button>
+        
+ <!-- Old Saint Mary's Church Image Gallery -->
+            <a href="#oldStMarysGallery" data-slide-to="0"><img class="img-responsive mainImage" src="images/stmarys.png" alt="Old Saint Mary's Church, Clonmel, Co.Tipperary" ></a>
+            <button class="btn btn-success btn-block btn-primary imgbtn" data-toggle="modal" data-target="#oldStMarysGallery">View all Images</button>
  
    
 </div>
-<div class="modal fade" id="oldStMarysGallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="oldStMarysGallery" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -389,67 +452,67 @@
                 <div id="#oldStMarysGallery" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/stmarys.png" alt="item1">
+                            <img src="images/stmarys.png" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys2.jpg" alt="item3">
+                            <img src="images/OldStMarysChurch/stmarys2.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys3.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys3.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys4.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys4.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys5.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys5.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys6.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys6.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys7.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys7.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys8.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys8.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys9.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys9.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys10.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys10.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/OldStMarysChurch/stmarys11.jpg" alt="item4">
+                            <img src="images/OldStMarysChurch/stmarys11.jpg" alt="Old Saint Mary's Church, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
@@ -470,9 +533,9 @@
     <a id="theWestGate"></a>
 
     <div class="container">
-        <div class="row features well">
+        <div class="row features well twelveColDiv">
 
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6 textDiv">
 
                 <h2 class="english">The West Gate</h2>
                 <p class="english">
@@ -547,16 +610,31 @@
                         Your browser does not support the audio element.
                 </audio>
 
+
+ <h2 class="polish"> Brama zachodnia </h2>
+
+                <p class="polish">
+Na końcu ulicy O’Connell znajduje się imponująca brama broniąca wjazdu do miasta od strony zachodniej. Współczesna struktura pochodzi z roku 1831, i została zbudowana przez kupca o imieniu Joyce. Oryginalny budynek który stał tutaj dawniej, został postawiony w celach obronnych, aby zapobiec irlandzkiej inwazji na wtedy normańskie miasto Clonmel. Rodowici mieszkańcy zamieszkiwali poza murami miasta, i dzisiaj ta część miasta nazywa się ’irlandzkie miasto’. Pomimo tego że nie wolni im było mieszkać wewnątrz murów miasta, Irlandczycy mogli wejść do Clonmel aby handlować. Podczas ostatniego wieku, Brama była bardzo zaniedbywana, co pobudziło zaniekopojonych mieszkańców do jej odnowienia. Nowy dach został położony, łuki wzmocnione stalowymi belkami i podłodi ustabilizowane również przy pomocy stali. Na wschodniej stronie bramy znajduje się wapniowa płyta pamiątkowa wyrzeźbiona przez Frances’a Dietricha w 1975 roku i upamiętniająca Lawrence’a Sterna, autora urodzonego w Clonmel.
+                </p>
+
+                <audio controls class="polish">
+                    <source src="audio/Polish/Polish_WestGate.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+                
+                
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6 picDiv">
                 <div class="row">
-        
-            <a href="#westgategallery" data-slide-to="0"><img class="img-responsive" src="images/westgate.png" ></a>
-            <button class="btn btn-success btn-block btn-primary" id="imgbtn" data-toggle="modal" data-target="#westgategallery">View all Images</button>
+                
+                
+ <!-- The West Gate Image Gallery -->    
+            <a href="#westgategallery" data-slide-to="0"><img class="img-responsive mainImage" src="images/westgate.png" alt="The West Gate, Clonmel, Co.Tipperary"></a>
+            <button class="btn btn-success btn-block btn-primary imgbtn" data-toggle="modal" data-target="#westgategallery">View all Images</button>
  
    
 </div>
-<div class="modal fade" id="westgategallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="westgategallery" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -564,77 +642,77 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="gallery" class="carousel slide" data-interval="false">
+                <div id="gallery1" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/westgate.png" alt="item1">
+                            <img src="images/westgate.png" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate1.jpg" alt="item2">
+                            <img src="images/TheWestGate/westgate1.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                  
                             </div>
                         </div>
                         
                         <div class="item">
-                            <img src="images/TheWestGate/westgate3.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate3.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate4.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate4.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate5.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate5.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate6.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate6.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate7.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate7.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate8.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate8.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate9.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate9.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate10.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate10.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate11.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate11.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheWestGate/westgate12.jpg" alt="item4">
+                            <img src="images/TheWestGate/westgate12.jpg" alt="The West Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
@@ -655,10 +733,10 @@
 
     <a id="theJailGate"></a>
     <div class="container">
-        <div class="row features well">
+        <div class="row features well twelveColDiv">
 
 
-            <div class="col-sm-6 col-sm-push-6">
+            <div class="col-sm-12 col-md-6 textDivJailGate">
 
                 <h2 class="english">The Jail Gate </h2>
                 <p class="english">
@@ -739,16 +817,29 @@
                         Your browser does not support the audio element.
                 </audio>
 
+
+<h2 class="polish"> Brama więzienna </h2>
+                <p class="polish">
+Zakład poprawczy imienia St Patryka w Clonmel dla młodzianych przestępców pomiędzy 16 a 21 rokiem życia został założony w roku 1906. Na krótki okres czasu, podczas Wojny Cywilnej w Irlandii, więźniowie zostali przeniesieni do obozu pracy w Clogheen, podczas gdy budynek zakładu w Clonmel został przejęty przez wojsko Wolnego Państwa Irlandzkiego. Więźniowie z Clogheen zostali natomiast przeniesieni do innych związków. Tydzień później, 17 chłopców uciekło i w nocy 4 listopada, siły Wolnego Państwa Irlandzkiego opuściły miasto które, następnego  dnia zostało zajęte przez Republikanów. Cztery dni później, Republikanie oznajmili że budynek miał zostać natychmiast opuszczony ponieważ zamierzali go podpalić. 81 więźniów i pracowników zostało przeniesionych do pobliskiego szpitala gdzie znaleźli schronienie. Budynki zostały podpalone paliwem aby upewnić się że zostały doszczętnie zniszczone pomimo silnego deszczu. Ksiądz Nicholas Sheehy był Irlandzkim rzymsko-katolickim księdzem z XVII wieku który poniósł karę śmierci za współudział przy morderstwie. Ksiądz Sheehy został powieszony, zdjęty i poćwiartkowany w Clonmel, w dniu 15 Marca 1766. Jego głowa została odcięta i nabita na kolec nad więzieniem w Clonmel jako ostrzeżenie przeciwko chłopskiej przemocy. Jego głowa pozostała nad wejściem do więzienia w Clonmel na 20 lat. 
+                </p>
+                <audio controls class="polish">
+                    <source src="audio/Polish/Polish_Jailgate.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+
+
+
             </div>
-            <div class="col-sm-6 col-sm-pull-6 ">
+            <div class="col-sm-12 col-md-6 picDivJailGate">
                <div class="row">
-        
-            <a href="#jailgategallery" data-slide-to="0"><img class="img-responsive" src="images/jailgate.png" ></a>
-            <button class="btn btn-success btn-block btn-primary" id="imgbtn2" data-toggle="modal" data-target="#jailgategallery">View all Images</button>
+
+<!-- The Jail Gate Image Gallery -->        
+            <a href="#jailgategallery" data-slide-to="0"><img class="img-responsive mainImage" src="images/jailgate.png" alt="The Jail Gate, Clonmel, Co Tipperary"></a>
+            <button class="btn btn-success btn-block btn-primary imgbtn" data-toggle="modal" data-target="#jailgategallery">View all Images</button>
  
    
 </div>
-<div class="modal fade" id="jailgategallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="jailgategallery" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -756,34 +847,34 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="gallery" class="carousel slide" data-interval="false">
+                <div id="gallery3" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/jailgate.png" alt="item1">
+                            <img src="images/jailgate.png" alt="The Jail Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheJailGate/jailgate1.jpg" alt="item2">
+                            <img src="images/TheJailGate/jailgate1.jpg" alt="The Jail Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                  
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheJailGate/jailgate2.jpg" alt="item3">
+                            <img src="images/TheJailGate/jailgate2.jpg" alt="The Jail Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheJailGate/jailgate.jpg" alt="item4">
+                            <img src="images/TheJailGate/jailgate.jpg" alt="The Jail Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/TheJailGate/jailgate3.jpg" alt="item4">
+                            <img src="images/TheJailGate/jailgate3.jpg" alt="The Jail Gate, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
@@ -806,8 +897,8 @@
 
 
     <div class="container">
-        <div class="row features well">
-            <div class="col-sm-6">
+        <div class="row features well twelveColDiv">
+            <div class="col-sm-12 col-md-6 textDiv">
 
                 <h2 class="english">Hearn's Hotel</h2>
                 <p class="english">
@@ -886,17 +977,28 @@
                     <source src="audio/Korean/Korean_HearnsHotel.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                 </audio>
+                
+                <h2 class="polish"> Hotel Hearns’a</h2>
+                <p class="polish">
+Rok 1792, widoczny na kamiennym łuku, może oznaczać rok w którym powstał budynek lub, co jest bardziej prawdopodobne, rok budowy dziedzińca gdzie Charles Bianconi założył swoją firmę przewozową. Bianconi, 16 chłopiec z Włoch został wysłanł do Irlandi aby uniknąć skandalu ponieważ uważano że za bardzo zbliżał się do miejscowej dziewczyny która, od dzieciństwa obiecana była pewnemu arystokracie. W 1815 roku założył jedno konny system transportowy pomiędzy Clonmel i Cahir. W roku 1825, jego zaprzęgi pokrywały 1870 mil dziennie i w 1857 roku, pokrywały 4244 mil dziennie  w 22 hrabstwach. Jego główna siedziba znajdowała się w Hearns gdzie również mieszkał od 1826 do 1834 roku kiedy oddał budynek swojemu przyjacielowi i wspólnikowi Danielowi Hearn który zamienił go w hotel. Bianconi był przyjacielem wielkiego Daniela O’Connell. Bianconi dokładał się do funduszy w walce o Emancypację Katolicką i został trzecim Katolickim burmistrzem Clonmel. Wejście do Hotelu Hearns zostało odbudowane po raz pierwszy w 1974 roku i ponownie w 1992, wnętrze również zostało dogłębnie odrestaurowane. Bianconi był dwukrotnie Burmistrzem Clonmel i był surowym ale sprawiedliwym pracodawcą.
+                </p>
+                <audio controls class="polish">
+                    <source src="audio/Polish/Polish_HearnsHotel.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6 picDiv">
                <div class="row">
-        
-            <a href="#hearnshotelgallery" data-slide-to="0"><img class="img-responsive" src="images/hearnshotel.jpg" ></a>
-            <button class="btn btn-success btn-block btn-primary" id="imgbtn3" data-toggle="modal" data-target="#hearnshotelgallery">View all Images</button>
+
+<!-- Hearn's Hotel Image Gallery -->
+            <a href="#hearnshotelgallery" data-slide-to="0"><img class="img-responsive mainImage" src="images/hearnshotel.jpg" alt="Hearns Hotel, Clonmel, Co Tipperary" ></a>
+            <button class="btn btn-success btn-block btn-primary imgbtn" data-toggle="modal" data-target="#hearnshotelgallery">View all Images</button>
  
    
 </div>
-<div class="modal fade" id="hearnshotelgallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="hearnshotelgallery" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -904,40 +1006,40 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="gallery" class="carousel slide" data-interval="false">
+                <div id="gallery4" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/hearnshotel.jpg" alt="item1">
+                            <img src="images/hearnshotel.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/HearnsHotel/hearnshotel1.jpg" alt="item2">
+                            <img src="images/HearnsHotel/hearnshotel1.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                  
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/HearnsHotel/hearnshotel2.jpg" alt="item3">
+                            <img src="images/HearnsHotel/hearnshotel2.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/HearnsHotel/hearnshotel3.jpg" alt="item4">
+                            <img src="images/HearnsHotel/hearnshotel3.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/HearnsHotel/hearnshotel4.jpg" alt="item4">
+                            <img src="images/HearnsHotel/hearnshotel4.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
                         </div>
                         <div class="item">
-                            <img src="images/HearnsHotel/hearnshotel5.jpg" alt="item4">
+                            <img src="images/HearnsHotel/hearnshotel5.jpg" alt="Hearne's Hotel, Clonmel, Co Tipperary">
                             <div class="carousel-caption">
                                 
                             </div>
@@ -977,18 +1079,22 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js '></script>
 
     <script src='js/bootstrap.js '></script>
+    
+
+
+
 
     <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 -->
 
 
 
-<script>
+<!--<script>
     $("newHeight").change(function () {
         var s= $("mainGuard").height();
         $("newHeight").height(s);
     });
-</script>
+</script>-->
 
 
     <script>
@@ -1000,6 +1106,7 @@
             $(".french").hide();
             $(".italian").hide();
             $(".korean").hide();
+			$(".polish").hide();
 
 
 
@@ -1014,6 +1121,7 @@
                 $(".french").hide();
                 $(".italian").hide();
                 $(".korean").hide();
+				$(".polish").hide();
                 //}
             });
 
@@ -1028,6 +1136,7 @@
                 $(".french").hide();
                 $(".italian").hide();
                 $(".korean").hide();
+				$(".polish").hide();
                 //}
             });
 
@@ -1042,6 +1151,7 @@
                 $(".french").hide();
                 $(".italian").hide();
                 $(".korean").hide();
+				$(".polish").hide();
                 //}
             });
 
@@ -1057,6 +1167,7 @@
                 $(".french").hide();
                 $(".italian").hide();
                 $(".korean").hide();
+				$(".polish").hide();
                 //}
             });
 
@@ -1071,6 +1182,7 @@
                 $(".english").hide();
                 $(".italian").hide();
                 $(".korean").hide();
+				$(".polish").hide();
                 //}
             });
 
@@ -1085,6 +1197,7 @@
                 $(".dutch").hide();
                 $(".english").hide();
                 $(".korean").hide();
+				$(".polish").hide();
 
                 //}
             });
@@ -1100,6 +1213,23 @@
                 $(".dutch").hide();
                 $(".english").hide();
                 $(".italian").hide();
+				$("polish").hide();
+
+                //}
+            });
+			
+			$(".polishButton").click(function()
+            {
+                //alert("Button container clicked on");
+                //if(event.target == "englishBtn"){
+                $(".polish").show();
+                $(".french").hide();
+                $(".irish").hide();
+                $(".spanish").hide();
+                $(".dutch").hide();
+                $(".english").hide();
+                $(".italian").hide();
+				$(".korean").hide();
 
                 //}
             });
@@ -1225,7 +1355,42 @@
     }(document, new Date(), "script", "rating-widget.com/"));</script>
     
     
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
 
+
+<script>
+(function($, viewport){
+
+    // Executes only in XS breakpoint
+    if( viewport.is('xs') ) {
+        alert('xs');
+    }
+
+    // Executes in SM, MD and LG breakpoints
+    if( viewport.is('>=sm') ) {
+        alert('small, medium or large');
+    }
+
+    // Executes in XS and SM breakpoints
+    if( viewport.is('<md') ) {
+        alert('xtra small or small');
+    }
+
+    // Execute only after document has fully loaded
+    $(document).ready(function() {
+        if( viewport.is('xs') ) {
+            alert('fully loaded xs');
+        }
+    });
+
+ 
+
+})(jQuery, ResponsiveBootstrapToolkit);
+
+</script>
 
 
 </body>
