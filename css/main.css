@@ -138,6 +138,8 @@ min-height: 600px;
 }
 
 
+
+
 @media (min-width: 992px) and (max-width: 1119px) {
 .picDivJailGate{
 min-height: 630px;
@@ -148,12 +150,11 @@ min-height: 560px;
 }
 
 .textDiv{
-min-height: 560px;
+min-height: 1000px;
 }
  .textDivJailGate{
 min-height: 630px;
 }
-
 
 }
 
@@ -175,6 +176,44 @@ min-height: 580px;
 
 
 }
+
+@media (min-width: 992px) {
+.picDivJailGate{
+min-height: 710px;
+}
+ 
+.picDiv{
+min-height: 550px;
+}
+
+.textDiv{
+min-height: 550px;
+}
+ .textDivJailGate{
+min-height: 710px;
+}
+
+}
+
+@media (max-width: 480px) {
+.picDivJailGate{
+min-height: 335px;
+}
+ 
+.picDiv{
+min-height: 365px;
+}
+
+.textDiv{
+min-height: 1070px;
+}
+ .textDivJailGate{
+min-height: 1300px;
+
+
+}
+
+
 
 .rw-ui-container{
 padding: 30px;

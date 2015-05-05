@@ -38,7 +38,7 @@
                 <a href="index.html" class="navbar-brand">
                     <h2>Gael Trails</h2> </a>
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button"  class="navbar-toggle"  data-toggle="collapse" data-target=".navbar-collapse">
 
 
                     <span class="sr-only">Toggle Navigation</span>
@@ -48,22 +48,22 @@
                 </button>
             </div>
 
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse ourCustomNav">
-                <li><a href="https://play.google.com/store/apps/details?id=com.ionicframework.gealtrails422306&hl=en"><h4>Download App</h4></a></li>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse ourCustomNav" id="homeNavToggle">
+                <li><a href="https://play.google.com/store/apps/details?id=com.ionicframework.gealtrails422306&hl=en"><h4 title="Go to the Playstore">Download App</h4></a></li>
 
 
-                <li><a href="contactUs.html" data-target="#" data-toggle="dropdown"><h4>Contact Us <span class="caret"></h4></span></a>
+                <li><a href="contactUs.html" data-target="#" data-toggle="dropdown"><h4 title="Contact the GaelTrails Team" >Contact Us <span class="caret"></h4></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#contactUs" class="scroll-link" data-id="contactUs"><h5>Contact Us</h5></a></li>
+                        <li><a href="#contactUs" class="scroll-link dropLink" data-id="contactUs"><h5 title="Contact the GaelTrails Team">Get in Touch</h5></a></li>
                         <li class="divider"></li>
-                        <li><a href='http://twitter.com/GaelTrails '><h6>Twitter</h6></a></li>
-                        <li><a href='http://facebook.com/GaelTrails '><h6>Facebook</h6></a></li>
-                        <li><a href='https://plus.google.com/101451135820169266578/posts '><h6>Google +</h6></a></li>
+                        <li><a href='http://twitter.com/GaelTrails ' class="dropLink"><h6 title="Go to the GaelTrails Twitter page">Twitter</h6></a></li>
+                        <li><a href='http://facebook.com/GaelTrails ' class="dropLink"><h6 title="Go to the GaelTrails Facebook page" >Facebook</h6></a></li>
+                        <li><a href='https://plus.google.com/101451135820169266578/posts ' class="dropLink"><h6 title="Go to the GaelTrails Google page">Google +</h6></a></li>
                     </ul>
                 </li>
 
 
-                <li><a href="theTrail.html" data-toggle="dropdown"><h4>The Trail <span class="caret"></h4></span></a>
+                <li><a href="theTrail.html" data-toggle="dropdown"><h4 title="Go to the Clonmel Heritage Trail Page">The Trail <span class="caret"></h4></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="theTrail.html"><h5> The Trail</h5></a></li>
                         <li class="divider"></li>
@@ -82,9 +82,9 @@
 
                 <li>
                     <ul class="company-social">
-                        <li class="social-facebook hidden-xs"><a href="http://www.facebook.com/gaeltrails" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li class="social-twitter hidden-xs"><a href="http://www.twitter.com/gaeltrails" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li class="social-google hidden-xs"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="social-facebook hidden-xs"><a href="http://www.facebook.com/gaeltrails" target="_blank" title ="Go to GaelTrails Facebook page"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-twitter hidden-xs"><a href="http://www.twitter.com/gaeltrails" target="_blank" title ="Go to GaelTrails Twitter page"><i class="fa fa-twitter"></i></a></li>
+                        <li class="social-google hidden-xs"><a href="https://plus.google.com/u/1/101451135820169266578/posts" target="_blank" title ="Go to GaelTrails Google Plus page"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </li>
 
@@ -100,7 +100,7 @@
         <div class="slogan">
             <img class="img-responsive col-lg-offset-3" src="images/logoWS.png" alt="navlogo" />
             <h1>Exploring the Clonmel Heritage Trail</h1>
-            <a href="#about" class="btn btn-skin scroll">Learn more</a>
+            <a href="#about" class="btn btn-skin scroll" title="Learn more about The Clonmel Heritage Trail">Learn more</a>
         </div>
 
     </section>
@@ -112,7 +112,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
 
                         <div class="section-heading">
-                            <h2><a href="theTrail.html">The Trail</a></h2>
+                            <h2 title="Go to The Trail page"><a href="theTrail.html">The Trail</a></h2>
                             <p id="sites">5 sites of interest on the Clonmel Heritage Trail</p>
                         </div>
 
@@ -309,6 +309,12 @@
     <script src="js/nivo-lightbox.min.js"></script>
     <script src="js/stellar.js"></script>
     <script src="js/custom.js"></script>
+    
+    <script>
+	$("a.dropLink").click(function() {
+   $("#homeNavToggle").collapse("toggle");
+});
+	</script>
 
 </body>
 
